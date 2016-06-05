@@ -20,23 +20,18 @@ As far as the guide is written, the current stable release is [openmpi-1.10.2.ta
     
 2. Compile Open MPI from source code.
 
-    ```sh
-    # use flag --enable-static to enable .a file for Open MPI library
-    $ ./configure --prefix=/absolute/path/to/install --enable-static
-    $ make
-    ```
+        # use flag --enable-static to enable .a file for Open MPI library
+        $ ./configure --prefix=/absolute/path/to/install --enable-static
+        $ make
 3. Install Open MPI.
     
-    ```sh
-    $ make install
-    ```
+        $ make install
+
 4. Modify shell environment variables. We need to add the following environment variables to the shell environment setup script (`/etc/profile` for global install and `~/.bashrc` for local install):
     
-    ```sh
-    export OMPI=/absolute/path/to/install
-    export PATH=$PATH:$OMPI/bin
-    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$OMPI/bin
-    ```
+        export OMPI=/absolute/path/to/install
+        export PATH=$PATH:$OMPI/bin
+        export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$OMPI/bin
 
 5. Copy all files of `/absolute/path/to/install` and `/etc/profile` or `~/.bashrc` to every node in the cluster.
 
