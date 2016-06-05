@@ -10,6 +10,7 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   
+  
   <script>
     var _hmt = _hmt || [];
     (function() {
@@ -19,5 +20,9 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
+
+  <link rel="stylesheet" href="http://yandex.st/highlightjs/7.1/styles/default.min.css">
+  <script src="http://yandex.st/highlightjs/7.1/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 
 </head>
