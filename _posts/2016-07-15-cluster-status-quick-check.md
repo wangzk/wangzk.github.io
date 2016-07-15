@@ -2,7 +2,7 @@
 layout: post
 title:  "Quick Check Cluster Status"
 date:   2016-07-15 20:00:00 +0800
-categories: linux spark
+categories: linux 
 ---
 
 ## Description
@@ -15,6 +15,7 @@ Sometimes we need to quickly check the cluster status to make sure that the clus
 
 ## Shell script
 Suppose that the script file is named `check_cluster_status.sh`.
+
 ```bash
 #!/bin/bash
 SLAVE_FILE=$1
@@ -52,15 +53,18 @@ The output of the script will be diveided into four parts:
 4. Sequential disk read.
 
 ### Free Memory
-In the following output, the node `slave002` uses 3.1G memory and has 59G free memory. 
+In the following output, the node `slave002` uses 3.1G memory and has 59G free memory.
+
 ```
 ======== FREE MEMORY ==========
 [1] 20:28:05 [SUCCESS] slave002
 -/+ buffers/cache:       3.1G        59G
 ...
 ```
+
 ### Load
 In the following output, the system load avg over the last 1, 5 and 15 minutes of `slave007` is 0.15, 0.09, 0.07. The user CPU usage of the last few seconds is 0.1%. 
+
 ```
 ======== CHECK LOAD ===========
 [1] 20:28:12 [SUCCESS] slave007
@@ -70,6 +74,7 @@ top - 20:24:15 up 41 days, 10:23,  0 users,  load average: 0.15, 0.09, 0.07
 
 ### Disk Performance
 In the following output, the sequential write and read performance of `slave007` are 215MB/s and 228MB/s respectively.
+
 ```
 ======== CHECK SEQUENTIAL DISK WRITE =========
 [1] 20:28:29 [SUCCESS] slave007
