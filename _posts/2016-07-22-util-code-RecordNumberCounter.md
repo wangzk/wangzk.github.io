@@ -4,10 +4,10 @@ title:  "Util Code Update: Record Number Counter"
 date:   2016-07-22 19:36:00 +0800
 categories: linux 
 ---
-Update to my util code base!
+An update to my util code base!
 
 
-# [Record Processing Counter](https://github.com/wangzk/my-util-codebase/tree/master/cpp/RecordNumberCounter)
+# Record Processing Counter
 
 Visit [code](https://github.com/wangzk/my-util-codebase/tree/master/cpp/RecordNumberCounter) here.
 
