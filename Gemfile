@@ -1,2 +1,1 @@
-gem "minima"
-gem "leap-day"
+gem "github-pages", group: :jekyll_plugins
