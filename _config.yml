@@ -19,7 +19,6 @@ encoding: UTF-8
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: jekyll-theme-leap-day
 kramdown:
   input: GFM
   syntax_highlighter: rouge
