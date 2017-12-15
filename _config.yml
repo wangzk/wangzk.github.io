@@ -34,13 +34,13 @@ defaults:
       path: "" # an empty string here means all files in the project
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
-      layout: "default"
+      layout: "post"
   -
     scope:
       path: "" # an empty string here means all files in the project
       type: "post" # previously `post` in Jekyll 2.2.
     values:
-      layout: "default"
+      layout: "post"
   
 
 # Exclude from processing.
