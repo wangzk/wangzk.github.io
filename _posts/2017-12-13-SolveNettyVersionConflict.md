@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title:  "Solve the Netty version conflict in a Hadoop + gRPC program"
 date:   2017-12-13 11:48:00 +0800
 categories: big data 
