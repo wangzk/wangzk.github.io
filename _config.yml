@@ -23,7 +23,7 @@ github_username:  wangzk
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-slate
+theme: jekyll-theme-modernist
 plugins:
   - jekyll-feed
   
