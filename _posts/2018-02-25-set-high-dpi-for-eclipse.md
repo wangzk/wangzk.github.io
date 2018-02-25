@@ -1,7 +1,7 @@
 ---
 title:  "Set HighDPI environment for Eclipse"
 date:   2018-02-25 08:32:00 +0800
-categories: eclipse, java 
+categories: java 
 ---
 
 To make Eclipse work well in the HighDPI environment in Linux, it needs to do the following configuration:
