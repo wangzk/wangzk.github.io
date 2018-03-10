@@ -8,71 +8,69 @@ categories: big data
 
 I use gRPC in a Hadoop application to make the mapper and the driver can communicate with each other.
 
-However, I want to use the latest gRPC version (1.8.0) along with an old Hadoop version (2.7.2).
+However, I want to use the latest gRPC v1.8.0 along with an old Hadoop v2.7.2.
 
 ## Problem
 
 gRPC and Hadoop rely on conflicting Netty versions. 
 
-The gRPC 1.8.0 is built on Netty 4.1.16.Final while the old Hadoop 2.7.2 is built on Netty 3.6.2.Final.
+The gRPC v1.8.0 is built with Netty v4.1.16.Final while the old Hadoop v2.7.2 is built with Netty v3.6.2.Final.
 
-Hadoop can work with Netty 4.1.16.Final but gRPC cannot work with Netty 3.6.2.Final.
+Hadoop can work with Netty v4.1.16.Final but gRPC cannot work with Netty v3.6.2.Final.
 
-In a word, the problem is to make my Hadoop application run with the new Netty version. 
+In a word, the problem is to make the Hadoop application run with the new Netty version. 
 
 ## Solution
 
+My solution is to make Hadoop application run with the new version Netty. To do so, I first package the new version Netty into my application's assembly jar and then force Hadoop use the new version Netty when launching my application.
+
 My solution has two parts: Maven configuration and Hadoop job configuration.
+
 
 ### Maven configuration
 
-First of all, I need to make sure that the Netty in the application's fat jar is the new version.
+I need to make sure that the Netty in the application's assembly jar is the new version.
 
-However, the default behavior of Maven dependency version conflict resolving follows a nearest wins strategy. It does not guarantee using the latest Netty version when packaging the fat jar. Saurabh jainMore explains the details in [this post](http://techidiocy.com/maven-dependency-version-conflict-problem-and-resolution/). He gives a simple solution (solution 2) in the post. The user can tell Maven to use the specific version when resolving version conflicts by adding the following section in the pom file:
-
-```xml
-    <!-- solve jar version conflicts -->
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>19.0</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-```
-
-Users can use the Maven enforcer plugin to check the version conflicts by adding the following code in the build section of the pom file:
+**Step 1**: Add the shade plugin in pom.xml to generate the assembly jar.
 
 ```xml
+
+<!-- use maven shade plugin to generate the assembly jar -->
 <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-enforcer-plugin</artifactId>
-                <version>1.4.1</version>
-                <executions>
-                    <execution>
-                        <id>enforce</id>
-                        <goals>
-                            <goal>enforce</goal>
-                        </goals>
-                        <configuration>
-                            <rules>
-                                <requireUpperBoundDeps/>
-                            </rules>
-                        </configuration>
-                    </execution>
-                </executions>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-shade-plugin</artifactId>
+    <version>1.5</version>
+    <executions>
+        <execution>
+            <phase>package</phase>
+            <goals>
+                <goal>shade</goal>
+            </goals>
+            <configuration>
+                <shadedArtifactAttached>true</shadedArtifactAttached>
+                <shadedClassifierName>allinone</shadedClassifierName>
+                <artifactSet>
+                    <includes>
+                        <include>*:*</include>
+                    </includes>
+                </artifactSet>
+                <transformers>
+                    <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+                        <resource>reference.conf</resource>
+                    </transformer>
+                    <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer"></transformer>
+                </transformers>
+            </configuration>
+        </execution>
+    </executions>
 </plugin>
+ 
 ```
 
-It will check the dependency tree with Upper Bound dependency rule.
-
-This section tells Maven to use Guava 19.0 when in the final fat jar.
-
-In my case, I can avoid adding Hadoop-related jars into my fat package by declaring the Hadoop dependency in the `provided` scope.
+**Step 2**: Avoid packaging Hadoop-related jars into the assembly jar by declaring the Hadoop dependency as in the `provided` scope.
 
 ```xml
+
 <dependency>
     <groupId>org.apache.hadoop</groupId>
     <artifactId>hadoop-client</artifactId>
@@ -81,26 +79,31 @@ In my case, I can avoid adding Hadoop-related jars into my fat package by declar
 </dependency>
 ```
 
-When packaging the fat jar, Hadoop and its dependencies will be ignored. Only the new Netty brought by gRPC will be packaged into the fat jar.
+When packaging the assembly jar, Hadoop and its dependencies will be ignored. Only the new Netty brought by gRPC will be packaged into the fat jar.
 
 
 ### Hadoop job configuration
 
-Second, I need to make sure that Hadoop uses my Netty when launching my application in Yarn.
+Second, I need to make sure that Hadoop uses the new Netty packaged in the assembly jar when launching my application in Yarn.
 
-I need to change two configurations:
-1. Before launching the program with `hadoop jar`, set the system environment variable:
+Two configurations changes are needed:
+
+1. Before launching the program with `hadoop jar`, set the environment variable:
 
     ```bash
     export HADOOP_USE_CLIENT_CLASSLOADER=true
     ```
-    By setting this environment variable, Hadoop will isolate the classpath of the user program from the hadoop system classpath. This will make the client-side java program use the new Netty packaged in the fat jar.
-2. Set the Hadoop configuration:
-    ```
+
+    By setting this environment variable, Hadoop will isolate the classpath of the user program from the hadoop system classpath. This will make the client-side java program use the new Netty packaged in the assembly jar.
+
+2. Set the Hadoop configuration in the program or in the configuration file:
+
+    ``` 
     mapreduce.job.user.classpath.first=true
     mapreduce.job.classloader=true
     ```
-    This will make the user jar appear first on the Mapper/Reducer side. The program will load the new Netty packaged in the fat jar.
+
+    This will make the user jar appear first on the Mapper/Reducer side. The the program is launched, it will load the new Netty packaged in the assembly jar.
 
 
 Finally, I can use gRPC with a new Netty version in my Hadoop application.
