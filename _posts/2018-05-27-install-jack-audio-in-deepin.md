@@ -1,10 +1,10 @@
 ---
-title:  "在Linux中使用JACK提升音质 - 一个快速教程"
+title:  "在Linux中使用JACK提升音质：快速教程"
 date:   2018-05-27 09:21:00 +0800
 categories: linux 
 ---
 
-## 为什么使用 JACK 而不是默认的音频驱动 ALSA？
+### 为什么使用 JACK 而不是默认的音频驱动 ALSA？
 
 根据Deepin论坛[《简单提升linux音效，实测有效》](https://bbs.deepin.org/forum.php?mod=viewthread&tid=137002)的帖子的说法，Deepin Linux使用的PulseAudio/ALSA声卡驱动效果并不好，只是能听个响，多环绕声等高级功能无法利用起来，导致收听效果没法和Win10/Mac比。而装上JACK之后，就能充分发挥声卡硬件本身的特性，提供高质量的音质。据发帖人说，音质有了质的飞跃。
 
@@ -14,7 +14,7 @@ categories: linux
 
 [^1]: 本教程安装的是目前比较成熟的Jack1版本的驱动。
 
-## 安装 JACK
+### 安装 JACK
 
 主要是需要安装两个和JACK相关的软件包：
 1. qjackctl: JACK驱动的一个图形化配置程序。安装该软件包会自动安装JACK相关的驱动程序。
@@ -28,9 +28,9 @@ sudo apt install qjackctl pulseaudio-module-jack
 
 在安装的过程中遇到各种提示时都选择“Y”或”是“。安装完毕后需要进行下一步的配置。
 
-## 配置 JACK
+### 配置 JACK
 
-### 配置用户组
+#### 配置用户组
 
 优先需要将你的用户名添加到audio组。在终端中执行如下命令：
 
@@ -40,7 +40,7 @@ sudo usermod -a -G audio <你的用户名>
 
 执行完后，需要注销当前桌面会话或重启系统（建议重启）。
 
-### 配置 QJackctl
+#### 配置 QJackctl
 
 配置完用户组之后，就可以启动JACK图形化配置程序qjackctl进行配置了（图标是一个插头）。
 
@@ -60,7 +60,7 @@ pactl load-module module-jack-sink channels=2; pactl load-module module-jack- so
 
 点击“OK”保存并关闭配置对话框。
 
-## 启动 JACK
+### 启动 JACK
 
 在QJackctl的主界面点击"Start"按钮，启动JACK音频模块。建议后台播放音乐以便测试。
 
@@ -95,6 +95,7 @@ pactl load-module module-jack-sink channels=2; pactl load-module module-jack- so
     ![QJackctl托盘](/img/deepin-jack-install/tray-icon.png)
 3. 想彻底退出QJackctl，需要在QJackctl的主界面里点击Quit。
 
+---
 
 
 
