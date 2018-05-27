@@ -6,35 +6,34 @@ categories: big data
 
 ## Background
 
-I use gRPC in a Hadoop application to make the mapper and the driver can communicate with each other.
+I try to use gRPC in a Hadoop application to make the mapper and the driver can communicate with each other.
 
-However, I want to use the latest gRPC v1.8.0 along with an old Hadoop v2.7.2.
+However, I want to use the latest gRPC v1.8.0 along with the old Hadoop v2.7.2.
 
 ## Problem
 
-gRPC and Hadoop rely on conflicting Netty versions. 
+gRPC v1.8.0 and Hadoop v2.7.2 rely on the conflicting Netty versions. 
 
 The gRPC v1.8.0 is built with Netty v4.1.16.Final while the old Hadoop v2.7.2 is built with Netty v3.6.2.Final.
 
-Hadoop can work with Netty v4.1.16.Final but gRPC cannot work with Netty v3.6.2.Final.
+Hadoop can work with the new Netty v4.1.16.Final but gRPC cannot work with the old Netty v3.6.2.Final.
 
-In a word, the problem is to make the Hadoop application run with the new Netty version. 
+In a word, the problem is how to make Hadoop run my application with the new Netty version. 
 
 ## Solution
 
-My solution is to make Hadoop application run with the new version Netty. To do so, I first package the new version Netty into my application's assembly jar and then force Hadoop use the new version Netty when launching my application.
+To make Hadoop run the application with the new Netty, the main idea is to package the new Netty in the application's jar and force Hadoop launching the application with the Netty provided in the jar.
 
-My solution has two parts: Maven configuration and Hadoop job configuration.
+The solution has two parts: Configure maven and configure Hadoop job.
 
 
 ### Maven configuration
 
-I need to make sure that the Netty in the application's assembly jar is the new version.
+Firstly, Package the Netty of the new version in the application's assembly jar.
 
-**Step 1**: Add the shade plugin in pom.xml to generate the assembly jar.
+**Step 1**: Use the shade plugin in maven to generate the assembly jar.
 
 ```xml
-
 <!-- use maven shade plugin to generate the assembly jar -->
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
@@ -67,10 +66,9 @@ I need to make sure that the Netty in the application's assembly jar is the new 
  
 ```
 
-**Step 2**: Avoid packaging Hadoop-related jars into the assembly jar by declaring the Hadoop dependency as in the `provided` scope.
+**Step 2**: Avoid packaging Hadoop-related jars in the assembly jar by declaring the Hadoop dependency in the `provided` scope.
 
 ```xml
-
 <dependency>
     <groupId>org.apache.hadoop</groupId>
     <artifactId>hadoop-client</artifactId>
@@ -79,31 +77,30 @@ I need to make sure that the Netty in the application's assembly jar is the new 
 </dependency>
 ```
 
-When packaging the assembly jar, Hadoop and its dependencies will be ignored. Only the new Netty brought by gRPC will be packaged into the fat jar.
+After the configuration, maven will not package Hadoop and its dependencies in the assembly jar. Only the new Netty depended by gRPC will be packaged into the assembly jar.
 
 
 ### Hadoop job configuration
 
-Second, I need to make sure that Hadoop uses the new Netty packaged in the assembly jar when launching my application in Yarn.
+Secondly, force Hadoop lauching the application with the new Netty packaged in the assembly jar.
 
-Two configurations changes are needed:
+Two configurations are needed:
 
-1. Before launching the program with `hadoop jar`, set the environment variable:
+1. Before launching the application with `hadoop jar`, set the environment variable on the driver side:
 
     ```bash
     export HADOOP_USE_CLIENT_CLASSLOADER=true
     ```
 
-    By setting this environment variable, Hadoop will isolate the classpath of the user program from the hadoop system classpath. This will make the client-side java program use the new Netty packaged in the assembly jar.
+    By setting this environment variable, Hadoop will isolate the classpath of the user program from the hadoop system classpath. This will make the driver side use the new Netty in the assembly jar.
 
-2. Set the Hadoop configuration in the program or in the configuration file:
+1. Set the following Hadoop configurations in the program (or you can modify the hadoop configuration file):
 
     ``` 
     mapreduce.job.user.classpath.first=true
     mapreduce.job.classloader=true
     ```
 
-    This will make the user jar appear first on the Mapper/Reducer side. The the program is launched, it will load the new Netty packaged in the assembly jar.
-
+    This will make the user jar appear first in the classpath on the Mapper/Reducer side, thus the new Netty is used.
 
 Finally, I can use gRPC with a new Netty version in my Hadoop application.
