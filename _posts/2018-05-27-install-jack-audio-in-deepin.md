@@ -52,7 +52,7 @@ sudo usermod -a -G audio <你的用户名>
 
 ![Options选项卡](/img/deepin-jack-install/options.png)
 
-在Scripting选项组下面勾选"Execute script after Startup"一项，并在后面的文本框中填入（注意复制整行）：
+在Scripting选项组下面勾选"Execute script after Startup"一项，并在后面的文本框中填入：
 
 `pactl load-module module-jack-sink channels=2; pactl load-module module-jack- source channels=2;pacmd set -default-sink jack_out`
 
