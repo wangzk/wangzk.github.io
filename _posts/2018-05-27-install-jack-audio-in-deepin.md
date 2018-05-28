@@ -72,6 +72,29 @@ pactl load-module module-jack-sink channels=2; pactl load-module module-jack- so
 
 点击“Stop”就会暂停使用JACK驱动并切换回之前的ALSA工作模式。点击Quit就彻底停止JACK驱动模块。
 
+#### 调节系统音量上限
+
+第一次使用JACK时，可能会出现音量很小的情况。这时需要使用`alsamixer`程序调节系统的**音量上限**。
+
+首先安装alsamixer程序：
+
+```
+sudo apt install alsa-utils
+```
+
+然后在终端中运行`alsamixer`命令。
+
+在alsamixer程序的界面，首先按F6键选择声卡，选择除Default之外的那块实际物理声卡：
+
+![alsamixer选择声卡界面](/img/alsamixer-select-sound-card.png)
+
+然后在新的界面中使用方向键移动到Master选项上，利用上下箭头键调节Master的音量，该音量值是**最大音量的上限**（注意不要太大，太大容易爆音）：
+
+![alsamixer调节最大音量](/img/alsamixer-change-master-volumn.png)
+
+配置好音量上限后，按Esc退出设置。
+
+
 #### 配置 JACK 开机自动启动
 
 如果对JACK的音质感到满意，可以按如下步骤将JACK配置为开机自动启动。
