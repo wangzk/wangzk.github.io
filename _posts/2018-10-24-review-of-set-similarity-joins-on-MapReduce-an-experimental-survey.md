@@ -4,9 +4,7 @@ date: 2018-10-24 21:30:00 +0800
 categories: review 
 ---
 
-# Review of "Set Similarity Joins on MapReduce: An Experimental Survey"
-
-This blog is my review of a recent experimental survey on distributed set similarity join algorithms [1].
+This blog is my review of [a recent experimental survey [1]](http://dl.acm.org/citation.cfm?doid=3231751.3242932) on distributed set similarity join algorithms.
 
 ## Summary
 
