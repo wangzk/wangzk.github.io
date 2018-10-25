@@ -3,8 +3,10 @@ title:  "Set HighDPI environment for Eclipse"
 date:   2018-02-25 08:32:00 +0800
 categories: java 
 ---
-
 To make Eclipse work well in the HighDPI environment in Linux, it needs to do the following configuration:
+
+
+
 
 1. Make the font look bigger ([reference page](https://www.eclipse.org/eclipse/news/4.6/platform.php)): run eclipse with the environment variable `GDK_DPI_SCALE`.
 

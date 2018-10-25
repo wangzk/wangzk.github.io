@@ -8,6 +8,10 @@ categories: linux
 ## Description
 Sometimes we need to quickly check the cluster status to make sure that the cluster is OK to run a task. Therefore I wrote a shell script to do the quick check. The script will check the free memory, load and file system performance of every node in the cluster. 
 
+
+
+
+
 ## Prerequests
 1. The program `pssh` is installed. `pssh` is a tool to conduct parallel ssh tasks.
 2. SSH passwordless login is properly configured.

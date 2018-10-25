@@ -3,16 +3,16 @@ title:  "Solve the Netty version conflict in a Hadoop + gRPC program"
 date:   2017-12-13 11:48:00 +0800
 categories: big data 
 ---
+I want to use a newer version of gPRC (v1.8.0) in a MapReduce program with an old Hadoop version (v2.7.2). However, gRPC and Hadoop use different versions of Netty. I find a way to solve the version conflict.
+
+
+
 
 ## Background
 
 I try to use gRPC in a Hadoop application to make the mapper and the driver can communicate with each other.
 
 However, I want to use the latest gRPC v1.8.0 along with the old Hadoop v2.7.2.
-
-
-
-
 
 ## Problem
 
@@ -98,7 +98,7 @@ Two configurations are needed:
 
     By setting this environment variable, Hadoop will isolate the classpath of the user program from the hadoop system classpath. This will make the driver side use the new Netty in the assembly jar.
 
-1. Set the following Hadoop configurations in the program (or you can modify the hadoop configuration file):
+2. Set the following Hadoop configurations in the program (or you can modify the hadoop configuration file):
 
     ``` 
     mapreduce.job.user.classpath.first=true

@@ -5,6 +5,8 @@ date:   2016-06-05 11:11:00 +0800
 categories: linux mpi
 ---
 
+A brief guide on installing OpenMPI from source code.
+
 ## Download OpenMPI source code
 
 Download the Open MPI release with the suffix `.tar.gz` from Open MPI's [Download page](https://www.open-mpi.org/software/ompi/v1.10/).

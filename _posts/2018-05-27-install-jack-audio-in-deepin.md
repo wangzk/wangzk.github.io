@@ -3,6 +3,10 @@ title:  "在Linux中使用JACK提升音质：快速教程"
 date:   2018-05-27 09:21:00 +0800
 categories: linux 
 ---
+本篇将介绍在Deepin Linux中使用JACK提升音质的方法。
+
+
+
 
 ## 为什么使用 JACK 而不是默认的音频驱动 ALSA？
 

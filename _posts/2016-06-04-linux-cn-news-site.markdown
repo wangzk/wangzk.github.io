@@ -7,6 +7,10 @@ categories: linux
 
 在这里介绍几个一些Linux新闻站，从中能获取到Linux系统生态的最新新闻，发现新软件，知道新技巧。
 
+
+
+
+
 ## 中文新闻站
 * **[LinuxToy](https://www.linuxtoy.org)**, 内容质量很高的新闻站，涉及Linux软件各个方面的新闻。除了新闻发布的频率比较少之外，其他都挺好，新闻质量很高，评论的质量也很好。
 * **[iKDE.org](http://www.ikde.org/)**, 有关KDE桌面新闻的新闻站。发文章频率很低，不过也是质量很高。
