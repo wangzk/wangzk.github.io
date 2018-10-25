@@ -5,7 +5,14 @@ date:   2016-06-05 11:11:00 +0800
 categories: linux mpi
 ---
 
+* content
+{:toc}
+
 A brief guide on installing OpenMPI from source code.
+
+
+
+
 
 ## Download OpenMPI source code
 

@@ -3,7 +3,12 @@ title:  "Solve the Netty version conflict in a Hadoop + gRPC program"
 date:   2017-12-13 11:48:00 +0800
 categories: big data 
 ---
+
+* content
+{:toc}
+
 I want to use a newer version of gPRC (v1.8.0) in a MapReduce program with an old Hadoop version (v2.7.2). However, gRPC and Hadoop use different versions of Netty. I find a way to solve the version conflict.
+
 
 
 
