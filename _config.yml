@@ -8,12 +8,13 @@ baseurl: ""
 github_username: wangzk
 # Build settings
 markdown: kramdown
-
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 category_dir: category/
 tag_dir: tag/
+# excerpt
+excerpt_separator: "\n\n\n\n"
 gems: [jekyll-paginate]
 paginate: 6
 paginate_path: /page:num/
