@@ -10,6 +10,10 @@ I try to use gRPC in a Hadoop application to make the mapper and the driver can 
 
 However, I want to use the latest gRPC v1.8.0 along with the old Hadoop v2.7.2.
 
+
+
+
+
 ## Problem
 
 gRPC v1.8.0 and Hadoop v2.7.2 rely on the conflicting Netty versions. 
