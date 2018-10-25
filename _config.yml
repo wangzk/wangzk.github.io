@@ -1,7 +1,7 @@
 # Site settings
 title: "ZK Blog"
 brief-intro: "This is ZK Wang's personal blog."
-description_footer: "ZKBlog"
+description_footer: "ZKBlog."
 url: "https://wangzk.github.io"
 baseurl: ""
 # Foot
@@ -18,3 +18,5 @@ excerpt_separator: "\n\n\n\n"
 gems: [jekyll-paginate]
 paginate: 6
 paginate_path: /page:num/
+# comments
+disqus_shortname: wzkblog
