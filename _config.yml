@@ -1,40 +1,19 @@
 # Site settings
 title: "ZK Blog"
-description: "This is ZK Wang's personal blog."
-url: ""
-author:
-  name: "ZK Wang"
-  url: "https://wangzk.github.io/"
-
+brief-intro: "This is ZK Wang's personal blog."
+description_footer: "Graph computing & more."
+url: "https://wangzk.github.io"
+baseurl: ""
+# Foot
+github_username: wangzk
 # Build settings
-baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
 markdown: kramdown
-source: .
-destination: ./_site
-paginate: 8
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+category_dir: category/
+tag_dir: tag/
+gems: [jekyll-paginate]
+paginate: 6
 paginate_path: /page:num/
-
-# Default values
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-
-# Plugins
-gems:
-  - jekyll-paginate
-  - jekyll-sitemap
-
-# Custom variables
-version: "1.0.0"
-
-# Options
-custom_header: false
-custom_nav_footer: false
-reverse: false
-
-remote_theme: rohanchandra/type-theme
-
