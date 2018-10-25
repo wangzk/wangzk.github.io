@@ -8,4 +8,4 @@ type: page
 
 This is ZK Wang's personal blog.
 
-Welcome to contact me via `wangzk at smail.nju.edu.cn` and visit [my GitHub profile](https://github.com/wangzk).
+Welcome to contact me via `wang.zk at outlook.com` and visit [my GitHub profile](https://github.com/wangzk).
