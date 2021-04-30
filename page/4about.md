@@ -24,8 +24,6 @@ type: page
 * 计算机科学与技术学院104房间
 * 电子邮箱/E-mail：wangzhaokang AT nuaa.edu.cn
 
- I am now a lecturer in the College of Computer Science & Technology, Nanjing University of Aeronautics and Astronautics (NUAA), China. Before joining NUAA, I got my PhD from Nanjing University in 2021.
-
 **研究方向/Research Interests**
 
 * 图计算/Graph Computing
@@ -33,6 +31,13 @@ type: page
 * 分布式图计算系统/Distributed Graph Processing Systems
 * 并行计算/Parallel Computing
 * 大数据并行处理/Parallel Processing for Big Data
+
+**个人经历/Personal Experience** 
+
+* 2021.04 - ，南京航空航天大学，计算机科学与技术学院，讲师
+* 2013.09 - 2021.03，[南京大学](http://www.nju.edu.cn)，[计算机科学与技术系](http://cs.nju.edu.cn)/[计算机软件新技术国家重点实验室](http://keysoftlab.nju.edu.cn)，[PASA大数据实验室](http://pasa-bigdata.nju.edu.cn)，工学博士（导师：[黄宜华](http://cs.nju.edu.cn/yhuang)教授）
+* 2009.09 - 2013.06，[南京大学](http://www.nju.edu.cn)，[计算机科学与技术系](http://cs.nju.edu.cn)，拔尖计划班，理学学士
+* 2006.09 - 2009.06，[郑州市第一中学](http://www.zzyz.com.cn/)
 
 # 学术成果/Publications
 
