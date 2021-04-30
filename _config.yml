@@ -1,7 +1,7 @@
 # Site settings
-title: "ZK Blog"
-brief-intro: "This is ZK Wang's personal blog."
-description_footer: "ZKBlog."
+title: "Zk Wang's Blog"
+brief-intro: "This is Zk Wang's personal blog."
+description_footer: "Zk Wang's Blog"
 url: "https://zkwang.gitee.io"
 baseurl: ""
 # Foot
