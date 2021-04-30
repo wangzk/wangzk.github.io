@@ -8,9 +8,9 @@ type: page
 
 # 个人简介/Personal Profile
 
-![My Chinese name](img/my-chinese-name.svg)
+<br>
 
-Dr. Zhaokang Wang
+![My Chinese name](/img/my-chinese-name.svg) (Dr. Zhaokang Wang)
 
 **职位/Job Title**
 
@@ -36,7 +36,8 @@ Dr. Zhaokang Wang
 
 # 学术成果/Publications
 
-通讯作者以星号标记（Corresponding authors are marked with  asterisks）。
+<br>
+<small>通讯作者以星号标记（Corresponding authors are marked with  asterisks）。</small>
 
 ## 2021
 
