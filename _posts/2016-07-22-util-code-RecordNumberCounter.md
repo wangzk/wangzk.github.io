@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Util Code Update: Record Number Counter"
 date:   2016-07-22 19:36:00 +0800
 categories: linux 

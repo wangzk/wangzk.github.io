@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Linux下中文输入法出现问题的排查步骤"
 date:   2016-06-04 18:55:29 +0800
 categories: linux

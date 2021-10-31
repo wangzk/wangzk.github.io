@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Quick Check Cluster Status"
 date:   2016-07-15 20:00:00 +0800
 categories: linux 

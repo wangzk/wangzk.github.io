@@ -1,0 +1,22 @@
+# Site settings
+title: "Zk Wang's Blog"
+brief-intro: "This is Zk Wang's personal blog."
+description_footer: "Zk Wang's Blog"
+url: "https://zkwang.gitee.io"
+baseurl: ""
+# Foot
+github_username: wangzk
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+category_dir: category/
+tag_dir: tag/
+# excerpt
+excerpt_separator: "\n\n\n\n"
+gems: [jekyll-paginate]
+paginate: 6
+paginate_path: /page:num/
+# comments
+disqus_shortname: wzkblog

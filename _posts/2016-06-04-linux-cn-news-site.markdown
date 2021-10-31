@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Linux新闻站"
 date:   2016-06-04 18:35:29 +0800
 categories: linux

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Brief Guide on Installing OpenMPI from Source Code"
 date:   2016-06-05 11:11:00 +0800
 categories: linux mpi
