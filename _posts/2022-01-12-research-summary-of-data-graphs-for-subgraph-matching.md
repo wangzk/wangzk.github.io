@@ -23,13 +23,13 @@ The statistics and description of the real-world graph datasets are summarized i
 
 *Note: The statistics of each graph are retrieved from the literature. Their precision values depend on how to process the dataset files. Since different authors may process the original dataset files in different ways, it is common that the statistics do not agree with each other in literature.*
 
-The average degree $\bar{d}$ is defined as $\bar{d}=|V|/|E|$ (for directed graphs) and $\bar{d}=2|V|/|E|$ (for undirected graphs), where $|V|$ is the number of vertices and $|E|$ is the number of edges.
+The average degree $\bar{d}$ is defined as $\bar{d}=V/E$ (for directed graphs) and $\bar{d}=2V/E$ (for undirected graphs), where $V$ is the number of vertices and $E$ is the number of edges.
 
 <small>*The table is sorted by $|E|$ in the ascending order.</small>
 
 **Table: Statistics of Real-world Graphs**
 
-| Code Name            | Dataset Name                                                                                         | Directed | Labeled               | \|V\|    | \|E\|    | Average Degree |
+| Code Name            | Dataset Name                                                                                         | Directed | Labeled               | V    | E    | Average Degree |
 |----------------------|------------------------------------------------------------------------------------------------------|----------|-----------------------|----------|----------|----------------|
 | human                | Human protein-protein interaction network                                                            | NO       | Vertex                | 4.70E+03 | 8.60E+04 | 36.60          |
 | as-caida             | CAIDA AS Relationships Datasets                                                                      | NO       | NO                    | 2.65E+04 | 1.07E+05 | 8.07           |
