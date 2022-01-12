@@ -28,9 +28,9 @@ The topology of fixed query graphs are given in advance which is independent of 
 The following figure summarizes the widely-used fixed **undirected unlabeled** query graphs and gives each query graph a short code name.
 The symmetry-breaking conditions are also listed under the corresponding query graphs.
 
-![Summary of fixed undirected unlabeled query graphs](img/2022-01-12-research-summary-of-query-graphs-for-subgraph-matching/summary-of-fixed-query-graphs-undirected-unlabeled.png)
+![Summary of fixed undirected unlabeled query graphs](/img/2022-01-12-research-summary-of-query-graphs-for-subgraph-matching/summary-of-fixed-query-graphs-undirected-unlabeled.png)
 
-For undirected unlabeled query graphs, I provide a program [calc_symmetry_breaking_conditions.py](img/2022-01-12-research-summary-of-query-graphs-for-subgraph-matching/calc_symmetry_breaking_conditions.py) to calculate the symmetry-breaking conditions for a given query graph.
+For undirected unlabeled query graphs, I provide a program [calc_symmetry_breaking_conditions.py](/img/2022-01-12-research-summary-of-query-graphs-for-subgraph-matching/calc_symmetry_breaking_conditions.py) to calculate the symmetry-breaking conditions for a given query graph.
 
 The following research work uses many query graphs in the experimental evaluation. The authors group the query graphs into different groups:
 1. Park et al. [13] use a group of fixed patterns to generate query graphs with different sizes: chain, star, tree, cycle, clique, petal, flower, and graph.
@@ -64,7 +64,7 @@ Derived query graphs are derived from the standard query statements provided by 
 
 **LDBC-SNB**: Lai et al. [17] derive a group of fixed undirected labeled query graphs for the LDBC-SNB benchmark as shown below.
 
-![Summary of fixed undirected labeled query graphs for LDBC-SNB data graphs](img/2022-01-12-research-summary-of-query-graphs-for-subgraph-matching/summary-of-fixed-query-graphs-LDBC-SNB.drawio.png)
+![Summary of fixed undirected labeled query graphs for LDBC-SNB data graphs](/img/2022-01-12-research-summary-of-query-graphs-for-subgraph-matching/summary-of-fixed-query-graphs-LDBC-SNB.drawio.png)
 
 
 ## References
