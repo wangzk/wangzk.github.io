@@ -29,9 +29,13 @@ categories: teaching
 
 
 参考资料：
+
 [1] 上海交通大学并行与分布式系统研究所, "上海交通大学IPADS新人培训第一讲：Shell", 2021. [Bilibili视频](https://www.bilibili.com/video/BV1y44y1v7c3/?spm_id_from=333.788&vd_source=351076ebef83681ea73f45ba5a858412)
+
 [2] 富国王，"Ubuntu22.04安装教程 实战无跳过超详细", 2022. [Bilibili视频](https://www.bilibili.com/video/BV1Ru411y7n9?vd_source=351076ebef83681ea73f45ba5a858412)
+
 [3] QQ两个人, "图解VMware+Linux开启共享文件", 2021. [CSDN博客链接](https://blog.csdn.net/qq_44938451/article/details/119104928)
+
 [4] 苏格拉一地, "Windows系统与VirtualBox中Ubuntu系统文件夹共享", 2022. [Bilibili视频](https://www.bilibili.com/read/cv16973605/)
 
 ### 任务2：Linux下C语言编程入门
@@ -48,7 +52,9 @@ categories: teaching
 - 在Linux虚拟机中，编写一个Hello，World的程序，并创建一个cmake工程编译该Hello，World程序。
 
 参考资料：
+
 [1] Linux命令行与shell脚本编程大全（第3版）(图灵出品) [京东购买链接](https://item.jd.com/12010266.html#crumb-wrap)
+
 [2] 菜鸟教程, "Linux apt命令", https://www.runoob.com/linux/linux-comm-apt.html.
 
 
@@ -67,4 +73,5 @@ categories: teaching
 - 尝试使用vim编辑Hello, World源代码，将其中的"Hello, Wolrd!"变成"Hello, NUAA!"。将更新后的源代码进行提交(commit)，并推送到远程的Gitee仓库。
 
 参考资料：
+
 [1] 菜鸟教程, "GIt教程", https://www.runoob.com/git/git-tutorial.html.
