@@ -20,21 +20,21 @@ type: page
 
 <div style="flex:20%; padding:10px">
 
-<img src="/img/myphoto.png" style="width:150px; border-style: solid; border-width:thin; box-shadow: 4px 4px grey;" />
+<img src="/img/myphoto2.jpeg" style="width:150px; border-style: solid; border-width:thin; box-shadow: 4px 4px grey;" />
 
 </div>
 
 <div style="flex:70%; padding: 0px; text-align: left;" >
 
 <p>
-<img src="/img/my-chinese-name.svg" /> <big>(Zhaokang WANG)</big>
+<img src="/img/my-chinese-name.svg" /> <big>(Zhaokang Wang)</big>
 </p>
 
 <p><b>讲师</b></p>
 
 <p><a href="https://www.nuaa.edu.cn" target="_blank">南京航空航天大学</a></p>
 
-<p><a href="http://cs.nuaa.edu.cn">计算机科学与技术学院</a></p>
+<p><a href="http://cs.nuaa.edu.cn">计算机科学与技术学院/人工智能学院/软件学院</a></p>
 
 <p><b>Email</b>: <em>wangzhaokang [AT] nuaa.edu.cn</em></p>
 
