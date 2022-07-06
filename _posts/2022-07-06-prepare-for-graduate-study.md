@@ -64,6 +64,7 @@ categories: teaching
 - 注册一个Gitee网站的账号。联系老师在Gitee网站开通一个代码仓库，用于编程练习。老师会提供Gitee代码仓库的地址以及remote地址。
 - 将Gitee上的远程仓库拉取（Pull）到本地。将之前创建的Hello，World的CMake工程添加到git代码仓库里。
 - 将本地更新后的代码仓库推送到Gitee网站的远程仓库，并在网站上查看。
+- 尝试使用vim编辑Hello, World源代码，将其中的"Hello, Wolrd!"变成"Hello, NUAA!"。将更新后的源代码进行提交(commit)，并推送到远程的Gitee仓库。
 
 参考资料：
 [1] 菜鸟教程, "GIt教程", https://www.runoob.com/git/git-tutorial.html.
