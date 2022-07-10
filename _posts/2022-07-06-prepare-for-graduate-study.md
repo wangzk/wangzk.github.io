@@ -6,7 +6,7 @@ categories: teaching
 
 本文主要为我的新入学研究生准备，用于培养与提升研究生新生的编程能力。本文内容将持续更新。
 
-*最后更新日期*：2022年7月6日
+*最后更新日期*：2022年7月10日
 
 ## 培训目标
 
@@ -74,4 +74,5 @@ categories: teaching
 
 参考资料：
 
-[1] 菜鸟教程, "GIt教程", https://www.runoob.com/git/git-tutorial.html.
+[1] 菜鸟教程, "Git教程", https://www.runoob.com/git/git-tutorial.html.
+[2] 利用vim自带的vimtutor程序学习vim的基本使用。使用apt命令`apt install vim-gtk`安装vim，然后在命令行里执行命令`vimtutor`开始vim学习。
