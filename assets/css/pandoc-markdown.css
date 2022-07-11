@@ -148,7 +148,7 @@ html {
 }
 
 body {
-  font-family: var(--font-family-prose);
+  font-family: Noto Sans, 思源黑体, Arial, 黑体, var(--font-family-prose);
   color: var(--color-text);
   font-size: var(--font-size);
   line-height: var(--line-height);
