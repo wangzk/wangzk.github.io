@@ -75,4 +75,27 @@ categories: teaching
 参考资料：
 
 [1] 菜鸟教程, "Git教程", https://www.runoob.com/git/git-tutorial.html.
+
 [2] 利用vim自带的vimtutor程序学习vim的基本使用。使用apt命令`apt install vim-gtk`安装vim，然后在命令行里执行命令`vimtutor`开始vim学习。
+
+### 任务4：利用LeetCode提升数据结构的编程能力
+
+利用[力扣（LeetCode中文站）](https://leetcode.cn/)提供的学习教程和题库，完成常用数据结构的编程练习，以提升编程能力。首先需要在力扣网站注册会员，用会员登录后就可以看到左上角的“学习”和“题库”。在力扣的“学习”版块，依次完成以下课程内容的学习与编程任务：
+
+1. [数组和字符串-LeetBook](https://leetcode.cn/leetbook/detail/array-and-string/)
+2. [链表-LeetBook](https://leetcode.cn/leetbook/detail/linked-list/)
+3. [二叉树-LeetBook](https://leetcode.cn/leetbook/detail/data-structure-binary-tree/)
+4. [队列&栈-LeetBook](https://leetcode.cn/leetbook/detail/queue-stack/)
+5. [二分查找-LeetBook](https://leetcode.cn/leetbook/detail/binary-search/)
+6. [哈希表-LeetBook](https://leetcode.cn/leetbook/detail/hash-table/)
+
+学习小提示：
+
+1. 关于力扣网站的使用方法可以参见官方的[入门指南](https://support.leetcode.cn/hc/kb/category/1018381/)，或者在网络上搜索相关资料。力扣网站是提升编程能力的常用网站，互联网上有很多经验分享帖子:)
+2. 在课程中的做题页面（例如[“寻找数组的中心索引”](https://leetcode.cn/leetbook/read/array-and-string/yf47s/)）时，注意页面下方类似如下说明的提示：
+
+    ![LeetCode Tips](/img/2022-07-06-prepare-for-graduate-study/leetcode-tip.png)
+
+    该提示中的链接将引导到主站对应的题目页面。在主站的题目页面可以看到完整的题目描述、大家的评论，以及题解。**建议先自己尝试解题，当遇到不会的时候，先查询数据结构的教材或其他资料，实在搞不懂时再去看题解**。即使看了题解获得了解题思路，也要关闭题解的状态下重新作答，**直到自己独立写出的程序也能通过测试**。
+
+**源代码上传**：学习过程中各个题目的解题答案源代码文件需要添加到上一个任务中创建的git仓库中。每一个题目的文件至少应提交（commit）一次，不要一次性上传多个源代码文件。同一个源代码文件可以commit多次，以形成不同的文件版本（version）。
