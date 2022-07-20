@@ -109,5 +109,11 @@ categories: teaching
 1. 学习["2021版南京大学软件测试公开课"](https://www.bilibili.com/video/BV1v3411v785)的第5部分["1.3 测试术语"](https://www.bilibili.com/video/BV1v3411v785?p=5)，了解软件测试中的基本概念。
 2. 单元测试（Unit Test）是软件测试中的一种基础测试方法，也是最常用的测试方法。利用["同济大学-软件测试方法和技术实践"](https://www.bilibili.com/video/BV1wW411j7rN)在线课程，学习从第8部分"1.0单元测试引言"到第17部分"1.9还有哪些单元测试工具"的内容，了解单元测试的概念以及方法。
 3. 测试驱动开发（Test-Driven Development）是一种测试先于实现的软件开发理念，通过以单元测试为先导，督促程序员写出高质量的程序。学习["C++中的测试驱动开发 Test-Driven Development in C++"](https://www.bilibili.com/video/BV1Yb411v73C)的在线课程，了解测试驱动开发的理解以及实践方法。
+4. 编写程序时，遵循良好的编码风格能够提升源代码的易读性，并避免一些常见的编码错误。不同语言有不同的常用编码风格，主流大厂会公开发布其代码编码规范：
+   - [《Google C++ 风格指南》](https://zh-google-styleguide.readthedocs.io/en/latest/)，需要先阅读该风格指南的“注释”和“格式”两部分，其他的部分在用到相应C++语言特性时阅读。
+   - [《阿里巴巴Java开发手册》](https://developer.aliyun.com/special/tech-java)，来自国内Java大厂的一线实践经验。
+   - 将编码规范当做**工具书**使用，即用即查。
 
-在后续的程序编写与开发过程中，遵循与实践测试驱动开发的理念。
+在后续的程序编写与开发过程中，遵循与实践测试驱动开发的理念，并利用编码风格规范代码。
+
+:clapper: 本任务的在线培训PPT[下载链接](/assets/任务5培训大纲ppt.pdf)
