@@ -118,3 +118,17 @@ categories: teaching
 在后续的程序编写与开发过程中，遵循与实践测试驱动开发的理念，并利用编码风格规范代码。
 
 🎬本任务的在线培训PPT[下载链接](/assets/任务5培训大纲ppt.pdf)
+
+
+### 任务6：基于VS Code的C++开发环境配置
+
+[Visual Studio Code](https://code.visualstudio.com/)（简称VS Code）是一款微软推出的开源文本编辑器。该编辑器提供了非常强大的插件系统，可以配置出功能不错的C++开发环境。本次任务利用VS Code配置C++语言的远程开发环境（基于虚拟机或连接远程开发服务器）。 需完成以下的任务：
+
+1. 在Windows或Ubuntu Linux下安装VS Code。
+2. （可选）利用VS Code的Remote SSH机制，连接远程开发环境。
+3. 在Linux虚拟机或开发环境中安装clang编译器，以提供更好的代码补全。
+4. 在VS Code中安装如下的C++开发插件：
+   - C/C++ Extension Pack中的**所有**插件。
+   - CMake Tools
+   - C++ TestMate （用于Google Test框架）
+5. 打开一个CMake项目的文件夹，VS Code会自动识别CMake工程，并提供编译、运行、测试等选项。
