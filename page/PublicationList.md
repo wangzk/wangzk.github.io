@@ -6,7 +6,7 @@ icon: heart
 type: page
 ---
 
-<small>通讯作者以星号标记（Corresponding authors are marked with  asterisks）</small>
+<small>通讯作者以星号标记（Corresponding authors are marked with asterisks）</small>
 
 [DBLP Personal Profile](https://dblp.org/pid/155/5427.html)
 
