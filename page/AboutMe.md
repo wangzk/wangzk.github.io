@@ -48,8 +48,8 @@ type: page
 
 #### 研究方向
 
-- **大数据并行计算**：利用分布式并行计算的技术方法，*加速*大数据处理算法的计算速度。
-- **分布式图计算**: 利用分布式并行计算的技术方法，*加速*图数据处理中的复杂查询与计算问题。
+- **大数据并行计算**：利用分布式并行计算的技术方法，加速大数据处理算法的计算速度。
+- **分布式图计算**: 利用分布式并行计算的技术方法，加速图数据处理中的复杂查询与计算问题。
 
 #### 个人经历
 
@@ -66,8 +66,9 @@ type: page
 - **Zhaokang Wang**, Weiwei Hu, Guowang Chen, Chunfeng Yuan, Rong Gu\*, Yihua Huang\*, "Towards Efficient Distributed Subgraph Enumeration via Backtracking-based Framework," in *IEEE Transactions on Parallel and Distributed Systems (TPDS)*, vol. 32, no. 12, pp. 2953-2969, 2021. DOI:[10.1109/TPDS.2021.3076246](https://doi.org/10.1109/TPDS.2021.3076246). [[source code]](https://github.com/PasaLab/BENU) [[technical report]](https://arxiv.org/abs/2006.12819) (CCF A类国际期刊)
 - **Zhaokang Wang**, Rong Gu, Weiwei Hu, Chunfeng Yuan, and Yihua Huang, "BENU: Distributed subgraph enumeration with backtracking-based framework", in *Proceedings of the 35th IEEE International Conference on Data Engineering (ICDE)*, pp.136-147, IEEE, 2019. DOI:[10.1109/ICDE.2019.00021](https://doi.org/10.1109/ICDE.2019.00021). [[source code]](https://github.com/PasaLab/BENU) (CCF A类国际会议)
 - **Zhaokang Wang**, Shen Wang, Junhong Li, Chunfeng Yuan, Rong Gu\*, Yihua Huang\*, "VSIM: Distributed local structural vertex similarity calculation on big graphs," in *Journal of Parallel and Distributed Computing (JPDC)*, vol. 158, pp. 29-46, 2021. DOI: [10.1016/j.jpdc.2021.07.009](https://doi.org/10.1016/j.jpdc.2021.07.009). [[source code]](https://github.com/PasaLab/VSIM) (CCF B类国际期刊)
-- Rong Gu, Yang Qi, Tongyu Wu, **Zhaokang Wang**\*, Xiaolong Xu, Chunfeng Yuan, Yihua Huang\*, "SparkDQ: Efficient generic big data quality management on distributed data-parallel computation," in *Journal of Parallel and Distributed Computing (JPDC)*, vol. 156, pp. 132-147, 2021. DOI: [10.1016/j.jpdc.2021.05.012](https://doi.org/10.1016/j.jpdc.2021.05.012).[[source code]](https://github.com/PasaLab/SparkDQ) (CCF B类国际期刊)
 - **Zhaokang Wang**, Yunpan Wang, Chunfeng Yuan, Rong Gu\*, and Yihua Huang\*, "Empirical analysis of performance bottlenecks in graph neural network training and inference with GPUs," in *Neurocomputing*, vol. 446, pp.165-191, 2021. DOI:[10.1016/j.neucom.2021.03.015](https://doi.org/10.1016/j.neucom.2021.03.015). (中科院二区Top)
+- Rong Gu, Xiaofei Chen, Haipeng Dai, Shulin Wang, **Zhaokang Wang**, Yaofeng Tu, Yihua Huang, Guihai Chen. "Time and Cost-Efficient Cloud Data Transmission based on Serverless Computing Compression." IEEE INFOCOM 2023 - IEEE Conference on Computer Communications, pp. 1-10, 2023, doi: 10.1109/INFOCOM53939.2023.10229090.  (CCF A类会议)
+- Rong Gu, Yang Qi, Tongyu Wu, **Zhaokang Wang**\*, Xiaolong Xu, Chunfeng Yuan, Yihua Huang\*, "SparkDQ: Efficient generic big data quality management on distributed data-parallel computation," in *Journal of Parallel and Distributed Computing (JPDC)*, vol. 156, pp. 132-147, 2021. DOI: [10.1016/j.jpdc.2021.05.012](https://doi.org/10.1016/j.jpdc.2021.05.012).[[source code]](https://github.com/PasaLab/SparkDQ) (CCF B类国际期刊)
 
 #### 已授权发明专利
 
@@ -87,3 +88,14 @@ type: page
 - 中国计算机学会（CCF） 数据库专业委员会 通讯执行委员（2022.7-至今）
 - 江苏省计算机学会 大数据专家委员会 委员（2021.9-至今）
 - 江苏省计算机学会 网络与分布计算专委会 委员（2022.9-至今）
+
+#### 招生信息
+
+- 招生专业：计算机科学与技术/电子信息
+- 同时招收学硕和专硕
+- 2023年招生人数：2人
+
+欢迎有意报考的同学与我联系！如果你想从事并行计算、大数据并行处理方向的相关研究工作，如果你对利用MapReduce/Spark等大数据计算平台、结合多线程并行/分布式并行计算技术，提升关键算法和核心程序的计算性能有兴趣，欢迎将简历发送至我的电子邮箱。
+
+研究生阶段会学习和使用并行计算技术（OpenMP多线程编程、Java多线程编程、MPI编程）与大数据处理系统（MapReduce、Spark等）等工具，期望培养研究生较好的编程能力。
+
