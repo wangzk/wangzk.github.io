@@ -23,6 +23,27 @@ header:
       fr-LU   : *FR
       # @end locale config
     url: /archive.html
+    
+  - titles:
+      # @start locale config
+      zh: 教学
+      en: 教学
+      # @end locale config
+    url: /teaching.html 
+
+  - titles:
+      # @start locale config
+      zh: 研究
+      en: 研究
+      # @end locale config
+    url: /research.html 
+
+  - titles:
+      # @start locale config
+      zh: 技术
+      en: 技术
+      # @end locale config
+    url: /tech.html 
 
   - titles:
       # @start locale config

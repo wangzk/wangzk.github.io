@@ -27,7 +27,7 @@ type: page
 <div style="flex:70%; padding: 0px; text-align: left;" >
 
 <p>
-<img src="/img/my-chinese-name.svg" /> <big>(Zhaokang Wang)</big>
+<img src="/img/my-chinese-name.svg" style="width:200px;"/> <big>(Zhaokang Wang)</big>
 </p>
 
 <p><b>讲师</b></p>
@@ -62,12 +62,13 @@ type: page
 
 <small>通讯作者以星号标记，[全部论文列表](/about/publicationlist)</small>
 
-
 - **Zhaokang Wang**, Weiwei Hu, Guowang Chen, Chunfeng Yuan, Rong Gu\*, Yihua Huang\*, "Towards Efficient Distributed Subgraph Enumeration via Backtracking-based Framework," in *IEEE Transactions on Parallel and Distributed Systems (TPDS)*, vol. 32, no. 12, pp. 2953-2969, 2021. DOI:[10.1109/TPDS.2021.3076246](https://doi.org/10.1109/TPDS.2021.3076246). [[source code]](https://github.com/PasaLab/BENU) [[technical report]](https://arxiv.org/abs/2006.12819) (CCF A类国际期刊)
 - **Zhaokang Wang**, Rong Gu, Weiwei Hu, Chunfeng Yuan, and Yihua Huang, "BENU: Distributed subgraph enumeration with backtracking-based framework", in *Proceedings of the 35th IEEE International Conference on Data Engineering (ICDE)*, pp.136-147, IEEE, 2019. DOI:[10.1109/ICDE.2019.00021](https://doi.org/10.1109/ICDE.2019.00021). [[source code]](https://github.com/PasaLab/BENU) (CCF A类国际会议)
 - **Zhaokang Wang**, Shen Wang, Junhong Li, Chunfeng Yuan, Rong Gu\*, Yihua Huang\*, "VSIM: Distributed local structural vertex similarity calculation on big graphs," in *Journal of Parallel and Distributed Computing (JPDC)*, vol. 158, pp. 29-46, 2021. DOI: [10.1016/j.jpdc.2021.07.009](https://doi.org/10.1016/j.jpdc.2021.07.009). [[source code]](https://github.com/PasaLab/VSIM) (CCF B类国际期刊)
 - **Zhaokang Wang**, Yunpan Wang, Chunfeng Yuan, Rong Gu\*, and Yihua Huang\*, "Empirical analysis of performance bottlenecks in graph neural network training and inference with GPUs," in *Neurocomputing*, vol. 446, pp.165-191, 2021. DOI:[10.1016/j.neucom.2021.03.015](https://doi.org/10.1016/j.neucom.2021.03.015). (中科院二区Top)
-- Rong Gu, Xiaofei Chen, Haipeng Dai, Shulin Wang, **Zhaokang Wang**, Yaofeng Tu, Yihua Huang, Guihai Chen. "Time and Cost-Efficient Cloud Data Transmission based on Serverless Computing Compression." IEEE INFOCOM 2023 - IEEE Conference on Computer Communications, pp. 1-10, 2023, doi: 10.1109/INFOCOM53939.2023.10229090.  (CCF A类会议)
+
+- Rong Gu, Xiaofei Chen, Haipeng Dai, Shulin Wang, **Zhaokang Wang**, Yaofeng Tu, Yihua Huang, Guihai Chen. "Time and Cost-Efficient Cloud Data Transmission based on Serverless Computing Compression." in  *IEEE INFOCOM 2023 - IEEE Conference on Computer Communications*, pp. 1-10, 2023. DOI: [10.1109/INFOCOM53939.2023.10229090](https://doi.org/10.1109/INFOCOM53939.2023.10229090).  (CCF A类会议)
+- Zewen Sun, Duanchen Xu, Yiyu Zhang, Yun Qi, Yueyang Wang, Zhiqiang Zuo, **Zhaokang Wang**, Yue Li, Xuandong Li, Qingda Lu, Wenwen Peng, Shengjian Guo. "BigDataflow: A Distributed Interprocedural Dataflow Analysis Framework." in *Proceedings of the 31st {ACM} Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering, {ESEC/FSE} 2023, San Francisco, CA, USA, December 3-9, 2023*, pp. 1431-1443, 2023. DOI: [10.1145/3611643.3616348](https://doi.org/10.1145/3611643.3616348). (CCF A类会议)
 - Rong Gu, Yang Qi, Tongyu Wu, **Zhaokang Wang**\*, Xiaolong Xu, Chunfeng Yuan, Yihua Huang\*, "SparkDQ: Efficient generic big data quality management on distributed data-parallel computation," in *Journal of Parallel and Distributed Computing (JPDC)*, vol. 156, pp. 132-147, 2021. DOI: [10.1016/j.jpdc.2021.05.012](https://doi.org/10.1016/j.jpdc.2021.05.012).[[source code]](https://github.com/PasaLab/SparkDQ) (CCF B类国际期刊)
 
 #### 已授权发明专利
@@ -78,6 +79,7 @@ type: page
 
 #### 获奖与荣誉
 
+- 南京航空航天大学第二届研究生课程教学创新大赛，特等奖，课程负责人，2023.
 - 第五届中国 “互联网 +” 大学生创新创业大赛，全国金奖，团队核心成员（排名第三），2019.10， 教育部主办，南京大学计算机系首获金奖。
 - 南京大学优秀博士研究生创新能力提升计划，B类资助, 2019.09-2020.09， 南京大学。
 
@@ -93,9 +95,10 @@ type: page
 
 - 招生专业：计算机科学与技术/电子信息
 - 同时招收学硕和专硕
-- 2023年招生人数：2人
+- 2023年招生人数：2人（空余1人）
 
 欢迎有意报考的同学与我联系！如果你想从事并行计算、大数据并行处理方向的相关研究工作，如果你对利用MapReduce/Spark等大数据计算平台、结合多线程并行/分布式并行计算技术，提升关键算法和核心程序的计算性能有兴趣，欢迎将简历发送至我的电子邮箱。
 
 研究生阶段会学习和使用并行计算技术（OpenMP多线程编程、Java多线程编程、MPI编程）与大数据处理系统（MapReduce、Spark等）等工具，期望培养研究生较好的编程能力。
 
+*更新时间：2023年12月31日*
