@@ -20,7 +20,7 @@ type: page
 
 <div style="flex:20%; padding:10px">
 
-<img src="/img/myphoto2.jpeg" style="width:150px; border-style: solid; border-width:thin; box-shadow: 4px 4px grey;" />
+<img src="/img/myphoto3.png" style="width:150px; border-style: solid; border-width:thin; box-shadow: 4px 4px grey;" />
 
 </div>
 
