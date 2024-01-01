@@ -19,7 +19,7 @@ categories: tech
 
 参考教程： [2小时搞定Docker 全程干货 基于CentOS7](https://www.bilibili.com/video/BV1vP4y1m76P/)
 
-在实际的系统中，因为docker的运行需要root权限，但很多的系统不支持向第三方用户提供root权限（例如学校与商业的高性能计算平台）。因此，实际工作中更多的会用docker的无root权限版平替品podman。可以通过这个视频了解两者的区别[Docker vs Podman | 两者的区别是什么？](https://www.bilibili.com/video/BV1YU4y1p7jG)。因为docker和podman的命令行是完全兼容的，因此可以先用docker学习，后期再用podman实际运行与实验。
+在实际的系统中，因为docker的运行需要root权限，但很多的系统不支持向第三方用户提供root权限（例如学校与商业的高性能计算平台）。因此，实际工作中更多的会用docker的无root权限版平替品podman。可以通过这个视频了解两者的区别[Docker vs Podman 两者的区别是什么？](https://www.bilibili.com/video/BV1YU4y1p7jG)。因为docker和podman的命令行是完全兼容的，因此可以先用docker学习，后期再用podman实际运行与实验。
 
 ## Anaconda安装
 
