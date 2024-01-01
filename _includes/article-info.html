@@ -66,7 +66,16 @@
               <i class="far fa-calendar-alt"></i> <span>{{ include.article.date | date: __return }}</span>
             </li>
           {%- endif -%}
-
+          <li>
+            {%- include snippets/get-locale-string.html key='ARTICLE_DATE_FORMAT' -%}
+            <i class="far fa-calendar-alt"></i> <span>
+              {%- if include.article.last_modified_at -%}
+                  Last update: {{ include.article.last_modified_at | date: __return }}
+              {%- else -%}
+                  Last update: {{ include.article.date | date: __return }}
+              {%- endif -%}
+            </span>
+        </li>
           {%- if _pageview -%}
             {%- if site.pageview.provider -%}
               {%- include snippets/get-locale-string.html key='VIEWS' -%}
