@@ -1,5 +1,6 @@
 ---
 title: '毕业论文中文写作指导'
+date: 2024-01-01 15:35:00 +08:00
 categories: teaching
 ---
 
