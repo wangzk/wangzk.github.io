@@ -94,3 +94,21 @@ categories: tech
 - [Basics tutorial](https://grpc.io/docs/languages/java/basics/)
 
 在自己的机器上尝试使用gRPC编写一个最简单的ping-pong程序。
+
+## 图计算
+
+如果研究工作涉及图计算，则可能需要掌握以下知识。
+
+### 图数据库
+
+通过阅读中文技术报告《人工智能之图数据库》，初步了解图数据库的基本概念与数据模型。
+
+> [1] 清华大学人工智能研究院, 北京智源人工智能研究院, 清华—中国工程院知识智能联合研究中心. 人工智能之图数据库: 2020年第4期[R/OL]. AMiner, 2020[2023-08-01]. https://static.aminer.cn/misc/pdf/graphDB.pdf.
+
+与图数据库相关概念的更宏观全景、更详细的解释可以参考下列综合调研论文：
+
+> [2] BESTA M, GERSTENBERGER R, PETER E, 等. Demystifying Graph Databases: Analysis and Taxonomy of Data Organization, System Designs, and Graph Queries[J/OL]. ACM Computing Surveys, 2023, 56(2): 31:1-31:40. https://doi.org/10.1145/3604932.
+
+参考书籍：《图数据库》（Neo4j数据库的介绍与使用），按需阅读。
+
+> [3] IAN ROBINSON, JIM WEBBER, EMIL EIFREM. 图数据库[M]. 刘璐, 梁越, 译. 2 版. 北京: 人民邮电出版社, 2016.
