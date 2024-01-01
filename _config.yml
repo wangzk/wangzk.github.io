@@ -96,7 +96,7 @@ chart: true # false (default), true
 
 ## => Paginate
 ##############################
-paginate: 8
+paginate: 10
 paginate_path: /page:num # don't change this unless for special need
 
 
@@ -214,6 +214,7 @@ defaults:
       show_edit_on_github: false
       show_subscribe: false
       pageview: true
+      show_tags: true
 
 
 ## => Plugins
