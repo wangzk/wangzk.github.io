@@ -2,24 +2,41 @@
 layout: article
 title: "本科毕业设计/大学生创新训练计划技术指导"
 date: 2024-01-01 16:00:00 +08:00
-last_modified_at: 2024-01-19 17:17:00 +08:00
+last_modified_at: 2024-01-22 21:47:00 +08:00
 categories: tech
 ---
 
-在进行本科毕业设计、大学生创新训练计划时，需要提前学习和掌握部分课堂中不会教、但对于后续研究工作开展非常必要的技术知识。目前包括Linux虚拟机安装、Docker容器安装与使用、Anaconda安装等。
+在进行本科毕业设计、大学生创新训练计划时，需要提前学习和掌握部分课堂中不会教、但对于后续研究工作开展非常必要的技术知识。目前包括Linux编程环境配置、C/C++语言系列、Java语言系列、分布式计算、图计算、大数据技术等。
 
 <!--more-->
 
-## Linux虚拟机安装
+## Linux编程环境
+
+### Linux虚拟机安装
 
 部分项目的后续实验需要在Linux开发服务器或学校的高性能计算平台上完成，目标操作系统均为Linux系统，因此需要熟悉Linux系统命令行的使用方式。如果本地电脑是Windows环境，需要安装Linux虚拟机。
 
 为了适应学校的高性能计算平台的操作系统环境（CentOS 7），本地安装CentOS 7的虚拟机。
 
 - Linux发行版：CentOS 7。安装光盘iso下载链接：[南京大学开源软件镜像站CentOS7安装光盘](https://mirror.nju.edu.cn/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-2207-02.iso)。
-- 虚拟机：使用VMWare或VirtualBox，安装指导视频：[如何使用VMware安装centos7_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Kh4y1m767/)
+- 虚拟机：使用VMWare或VirtualBox，安装指导视频：[如何使用VMware安装centos7\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Kh4y1m767/)
 
-## Docker容器安装与使用
+也可以根据需要安装Ubuntu 22.04。Ubuntu 22.04的镜像也可以在南京大学开源软件镜像站下载到。
+
+### Linux基础工具使用
+
+下面使用上海交通大学IPADS组新人培训教程，学习Linux环境编程的入门知识。
+
+- 视频指导1：[IPADS新人培训第一讲：Shell](https://www.bilibili.com/video/BV1y44y1v7c3/)，Linux命令行使用进阶。
+- 视频指导2：[IPADS新人培训第三讲：Git](https://www.bilibili.com/video/BV1YR4y1E7LX/)，Linux下源代码管理与协同软件开发入门。
+
+关于Linux系统的常用命令，可以参考书籍：
+
+[1] 《Linux命令行与shell脚本编程大全（第3版）(图灵出品)》([美]布鲁姆（Richard Blum）,布雷斯纳汉（Christine Bresnahan）)-[京东图书(jd.com)](https://item.jd.com/12010266.html)
+
+或者是访问[阿里云开发者社区-学习中心-Linux基础知识](https://developer.aliyun.com/graph/linux/point/229)在线课程网站。
+
+### Docker容器安装与使用
 
 在Linux虚拟机中，安装docker容器环境。部分软件（例如GraphScope）的安装与使用都在Docker环境中完成。
 
@@ -27,13 +44,41 @@ categories: tech
 
 在实际的系统中，因为docker的运行需要root权限，但很多的系统不支持向第三方用户提供root权限（例如学校与商业的高性能计算平台）。因此，实际工作中更多的会用docker的无root权限版平替品podman。可以通过这个视频了解两者的区别[Docker vs Podman 两者的区别是什么？](https://www.bilibili.com/video/BV1YU4y1p7jG)。因为docker和podman的命令行是完全兼容的，因此可以先用docker学习，后期再用podman实际运行与实验。
 
-## Anaconda安装
+### Anaconda安装
 
 对于需要在CentOS 7中使用新版Python环境的同学，可以借助anaconda安装新Python环境。
 
 - Anaconda可以使用国内镜像源（使用说明）：[Anaconda 软件仓库镜像使用帮助 - MirrorZ Help](https://mirror.nju.edu.cn/mirrorz-help/anaconda/?mirror=NJU)
 - Anaconda的安装包（国内镜像）：[南京大学开源镜像站Anaconda3-2023.09-0-Linux-x86_64.sh](https://mirror.nju.edu.cn/anaconda/archive/Anaconda3-2023.09-0-Linux-x86_64.sh)
 - Anaconda安装说明（官方文档）：https://docs.anaconda.com/free/anaconda/install/linux/，其中下载Anaconda安装包的步骤可以不从官方网站下载，而是从上面的国内镜像下载速度快。
+
+## C/C++语言系列
+
+### xmake构建系统
+
+虽然CMake是C/C++语言事实上的软件构建系统，但CMake的语法以及编译依赖管理繁琐，对新手并不友好。在大创或毕业设计阶段，我们并不需要十分复杂的软件构建工具，因此目前推荐采用[xmake](https://github.com/xmake-io/xmake/blob/master/README_zh.md)作为C语言项目的构建工具。
+
+xmake具有项目配置简单、依赖管理方便的特点，很容易就可以搭建起一个有效的C语言工程，并且支持VS Code等开发环境。
+
+学习xmake可以阅读官方文档中的[“快速入门”部分](https://xmake.io/#/zh-cn/guide/installation)。
+
+### C++编程规则（有争议，可改进）
+
+为了避免在做大创或毕业设计时，被C++众多的内存问题以及各种构造函数陷阱所困扰而无法自拔、怀疑自我，在使用C++编写程序时，**尽量**遵守以下规则。如果实在没办法，可以找指导老师确认是否有必要使用高级特性：
+
+1. 【指针】不要使用任何指针（包括智能指针等）。
+2. 【数据容器】如有可能，全部用std::vector和std::map作为基础数据容器。
+3. 【函数】不要将std::vector和std::map作为函数的返回值。
+4. 【函数】函数参数不要使用指针，全部使用引用。
+5. 【函数】当需要向函数传入或从函数中传出std::vector/std::map参数时，**务必使用引用**。
+6. 【函数】函数的所有传入参数一律使用`const`修饰，所有传出参数不修饰。
+7. 【类】只使用`struct`定义类，避免使用继承、多态、重载等面向对象特性。
+8. 【类】所有基础类型（例如int, double等）的类成员变量，一定要显式给出一个默认值。
+9. 【类】不要包含引用类型成员变量。
+10. 【类】所有需要对一个类重载赋值运算符的场景，都转换成对应类的set成员函数调用；所有需要拷贝构造函数的地方，都转换为先创建一个默认初始化的对象，再调用set成员函数。
+11. 【语言标准】采用C++11标准，可以使用`auto`关键字。
+
+经验表明，对于大学生创新项目以及毕业设计，上述规则限制足够用了！
 
 ## Java语言系列
 
@@ -42,14 +87,13 @@ categories: tech
 ### Java语言基础
 
 - 书籍教程：[《Java语言程序设计（基础篇）》](https://find.nuaa.edu.cn/#/searchList/bookDetails/209357)，在校内网中访问该页面后可以点击“电子馆藏”->“馆藏电子书”下载到扫描版书籍。
-    - Java语言的基本编程概念（选择、循环等）与C/C++是相通的，可以触类旁通，学习时重点关注Java语言的语法特性即可。
-    - Java语言的面向对象特性是它的一个特点，在实际编程中会经常用到。面向对象程序设计的基本概念与C/C++是一样的，但Java中的实现方法和语法特性与C++有较大区别，需要专门关注。
-    - 学习建议：第1章-第13章，第17章（二进制IO）。JavaFX的内容可以跳过。
-    - IDE建议：不要使用Netbeans，教材中是Eclipse，推荐使用IntelliJ IDEA Community Edition。**建议直接在Linux系统下编程。**
-        - Windows版安装教程：[IntelliJ IDEA社区版下载安装及项目创建](https://www.bilibili.com/video/BV1Qr4y1F7rH)
-        - Linux系统下操作类似。
-- 视频教程：[黑马程序员Java零基础视频教程_上部](https://www.bilibili.com/video/BV17F411T7Ao)
-
+  - Java语言的基本编程概念（选择、循环等）与C/C++是相通的，可以触类旁通，学习时重点关注Java语言的语法特性即可。
+  - Java语言的面向对象特性是它的一个特点，在实际编程中会经常用到。面向对象程序设计的基本概念与C/C++是一样的，但Java中的实现方法和语法特性与C++有较大区别，需要专门关注。
+  - 学习建议：第1章-第13章，第17章（二进制IO）。JavaFX的内容可以跳过。
+  - IDE建议：不要使用Netbeans，教材中是Eclipse，推荐使用IntelliJ IDEA Community Edition。**建议直接在Linux系统下编程。**
+    - Windows版安装教程：[IntelliJ IDEA社区版下载安装及项目创建](https://www.bilibili.com/video/BV1Qr4y1F7rH)
+    - Linux系统下操作类似。
+- 视频教程：[黑马程序员Java零基础视频教程\_上部](https://www.bilibili.com/video/BV17F411T7Ao)
 
 ### Maven
 
@@ -59,21 +103,20 @@ categories: tech
 - 视频教程： [黑马程序员Maven全套教程，maven项目管理从基础到高级，Java项目开发必会管理工具maven](https://www.bilibili.com/video/BV1Ah411S7ZE)
   - 推荐内容：P1到P14（Maven基础）。
 - [Apache Maven Assembly Plugin](https://maven.apache.org/plugins/maven-assembly-plugin/)：在利用Maven生成Jar包时，为了简化Jar包结构，通常会选择将一个工程的所有代码以及该工程所依赖的所有软件包，联合打包成一个fat jar（即带有所有依赖库的jar包），这个过程需要使用到Apache Maven Assembly Plugin。学习该插件的使用，掌握生成fat jar的方法。
-    - [官方介绍](https://maven.apache.org/plugins/maven-assembly-plugin/index.html)
-    - [官方文档](https://maven.apache.org/plugins/maven-assembly-plugin/usage.html)
+  - [官方介绍](https://maven.apache.org/plugins/maven-assembly-plugin/index.html)
+  - [官方文档](https://maven.apache.org/plugins/maven-assembly-plugin/usage.html)
 
 ### Java语言并行程序设计
 
 对于涉及到并行计算的研究项目，有可能需要使用Java语言进行多线程并行编程。对于这部分知识的学习建议是：“根据项目需求驱动的学习模式”。当项目中需要用到一个特性时，去学习该特性的使用；如果在学习的过程中遇到了陌生的概念或不懂的知识，再去按图索骥的学习相关内容。
 
 - 书籍教程：[《Java 9并发编程实战》](https://find.nuaa.edu.cn/#/searchList/bookDetails/239156)。在校园网中访问时，可以通过该页面的“馆藏电子书”链接下载扫描版书籍。
-    - Java语言的多线程并行编程与操作系统中多线程并发的机制密切相关，许多基础概念（例如互斥锁等）是相通的。
-    - 学习建议：第1章、第2章、第5章、第6章、第7章做基础了解，其他章节按需学习。
-    - 书籍内容更详细、背景知识介绍更全面。
+  - Java语言的多线程并行编程与操作系统中多线程并发的机制密切相关，许多基础概念（例如互斥锁等）是相通的。
+  - 学习建议：第1章、第2章、第5章、第6章、第7章做基础了解，其他章节按需学习。
+  - 书籍内容更详细、背景知识介绍更全面。
 - 视频教程：[Dating Java8 系列视频](https://www.cnblogs.com/lingyejun/p/12130179.html)
-    - 相关视频：E04-E06（Java流），E07（fork-join框架）。
-    - 特点：实战向。
-
+  - 相关视频：E04-E06（Java流），E07（fork-join框架）。
+  - 特点：实战向。
 
 ## 分布式计算
 
@@ -115,7 +158,6 @@ categories: tech
 
 ## 大数据技术
 
-
 ### 大数据技术概览
 
 了解大数据处理的概念以及基础知识。参考书籍：
@@ -127,7 +169,6 @@ categories: tech
 ### MapReduce编程模型
 
 了解大数据处理的经典编程模型MapReduce的概念，及其执行流程。
-
 
 参考书籍：
 
@@ -146,4 +187,3 @@ categories: tech
 
 - 第1章 初识Hadoop
 - 第4章 关于YARN
-
