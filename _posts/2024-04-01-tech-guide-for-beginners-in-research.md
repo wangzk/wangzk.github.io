@@ -2,7 +2,7 @@
 layout: article
 title: "本科毕业设计/大学生创新训练计划技术指导"
 date: 2024-01-01 16:00:00 +08:00
-last_modified_at: 2024-01-22 21:47:00 +08:00
+last_modified_at: 2024-01-23 16:42:00 +08:00
 categories: tech
 ---
 
@@ -25,16 +25,14 @@ categories: tech
 
 ### Linux基础工具使用
 
-下面使用上海交通大学IPADS组新人培训教程，学习Linux环境编程的入门知识。
+下面使用来自MIT的[_The Missing Semester of Your CS Education_](https://missing.csail.mit.edu)（计算机教育中缺失的一课）作为参考资料。该课程提供了详细的技术指导与视频，方便学习。目前国内已经有了对应的中文版网站[“计算机教育中缺失的一课”](https://missing-semester-cn.github.io)。与Linux基础工具使用相关的课程章节包括：
 
-- 视频指导1：[IPADS新人培训第一讲：Shell](https://www.bilibili.com/video/BV1y44y1v7c3/)，Linux命令行使用进阶。
-- 视频指导2：[IPADS新人培训第三讲：Git](https://www.bilibili.com/video/BV1YR4y1E7LX/)，Linux下源代码管理与协同软件开发入门。
+- 课程概览与shell。
+- Shell工具和脚本。
 
 关于Linux系统的常用命令，可以参考书籍：
 
 [1] 《Linux命令行与shell脚本编程大全（第3版）(图灵出品)》([美]布鲁姆（Richard Blum）,布雷斯纳汉（Christine Bresnahan）)-[京东图书(jd.com)](https://item.jd.com/12010266.html)
-
-或者是访问[阿里云开发者社区-学习中心-Linux基础知识](https://developer.aliyun.com/graph/linux/point/229)在线课程网站。
 
 ### Docker容器安装与使用
 
@@ -51,6 +49,10 @@ categories: tech
 - Anaconda可以使用国内镜像源（使用说明）：[Anaconda 软件仓库镜像使用帮助 - MirrorZ Help](https://mirror.nju.edu.cn/mirrorz-help/anaconda/?mirror=NJU)
 - Anaconda的安装包（国内镜像）：[南京大学开源镜像站Anaconda3-2023.09-0-Linux-x86_64.sh](https://mirror.nju.edu.cn/anaconda/archive/Anaconda3-2023.09-0-Linux-x86_64.sh)
 - Anaconda安装说明（官方文档）：https://docs.anaconda.com/free/anaconda/install/linux/，其中下载Anaconda安装包的步骤可以不从官方网站下载，而是从上面的国内镜像下载速度快。
+
+### 使用Git进行代码版本管理
+
+Git是目前使用广泛的一种管理大型软件项目代码版本的工具。当一个软件项目是由多人共同开发时，更加需要使用版本管理工具在多人直接协调。关于Git的介绍与基础使用，可以参考[“计算机教育中缺失的一课”](https://missing-semester-cn.github.io)中“版本控制（Git）”一节的内容。
 
 ## C/C++语言系列
 
@@ -79,6 +81,12 @@ xmake具有项目配置简单、依赖管理方便的特点，很容易就可以
 11. 【语言标准】采用C++11标准，可以使用`auto`关键字。
 
 经验表明，对于大学生创新项目以及毕业设计，上述规则限制足够用了！
+
+### 程序调试与性能分析
+
+对于C/C++程序进行调试时，需要确保C/C++程序采用“调试模式”编译（即启用-g编译选项），以保证程序中的关键符号（例如变量名、函数名等）是被包含在可执行程序里。
+
+关于调试和性能分析相关技术的介绍，可以参考[“计算机教育中缺失的一课”](https://missing-semester-cn.github.io)中“调试及性能分析”一节的内容。
 
 ## Java语言系列
 
