@@ -2,7 +2,7 @@
 layout: article
 title: "本科毕业设计/大学生创新训练计划技术指导"
 date: 2024-01-01 16:00:00 +08:00
-last_modified_at: 2024-01-23 16:42:00 +08:00
+last_modified_at: 2024-01-29 19:45:00 +08:00
 categories: tech
 ---
 
@@ -152,11 +152,12 @@ xmake具有项目配置简单、依赖管理方便的特点，很容易就可以
 
 ### 图数据库
 
-通过阅读中文技术报告《人工智能之图数据库》，初步了解图数据库的基本概念与数据模型。
+通过阅读中文技术报告《人工智能之图数据库》和英文的Survey论文，可以初步了解图数据库的基本概念与数据模型。
 
 > [1] 清华大学人工智能研究院, 北京智源人工智能研究院, 清华—中国工程院知识智能联合研究中心. 人工智能之图数据库: 2020年第4期[R/OL]. AMiner, 2020[2023-08-01]. https://static.aminer.cn/misc/pdf/graphDB.pdf.
+> [2] TIAN Y. The World of Graph Databases from An Industry Perspective[J/OL]. ACM SIGMOD Record, 2022, 51(4): 60-67. DOI:10.1145/3582302.3582320.
 
-与图数据库相关概念的更宏观全景、更详细的解释可以参考下列综合调研论文：
+与图数据库相关概念的更全景、更详细的解释与说明可以参考下列的综合调研论文：
 
 > [2] BESTA M, GERSTENBERGER R, PETER E, 等. Demystifying Graph Databases: Analysis and Taxonomy of Data Organization, System Designs, and Graph Queries[J/OL]. ACM Computing Surveys, 2023, 56(2): 31:1-31:40. https://doi.org/10.1145/3604932.
 
