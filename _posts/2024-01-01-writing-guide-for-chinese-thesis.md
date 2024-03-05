@@ -1,7 +1,7 @@
 ---
 title: "毕业论文中文写作指导"
 date: 2024-01-01 15:35:00 +08:00
-last_modified_at: 2024-02-26 12:19:00 +08:00
+last_modified_at: 2024-03-10 21:57:00 +08:00
 categories: teaching
 show_tags: true
 ---
@@ -89,6 +89,8 @@ show_tags: true
 ![](/img/2024-01-01-writing-guide-for-chinese-thesis/fig_example3.png)
 
 ![](/img/2024-01-01-writing-guide-for-chinese-thesis/fig_example4.png)
+
+![图片来源(《Secure and Efficient k-Nearest Neighbor Query with Privacy-Preserving Authentication》)[https://link.springer.com/chapter/10.1007/978-981-19-7242-3_12]](/img/2024-01-01-writing-guide-for-chinese-thesis/fig_example5.png)
 
 #### 实验结果图
 
