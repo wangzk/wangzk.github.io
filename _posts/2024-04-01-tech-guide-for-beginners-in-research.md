@@ -2,7 +2,7 @@
 layout: article
 title: "本科毕业设计/大学生创新训练计划技术指导"
 date: 2024-01-01 16:00:00 +08:00
-last_modified_at: 2024-01-29 19:45:00 +08:00
+last_modified_at: 2024-3-5 19:45:00 +08:00
 categories: tech
 ---
 
@@ -12,20 +12,21 @@ categories: tech
 
 ## Linux编程环境
 
+对于Linux系统的使用，中国科学大学Linux用户组推出了[Linux 101在线课程](https://101.lug.ustc.edu.cn)，请借助该课程完成Linux操作系统基础知识的学习。
+
 ### Linux虚拟机安装
 
 部分项目的后续实验需要在Linux开发服务器或学校的高性能计算平台上完成，目标操作系统均为Linux系统，因此需要熟悉Linux系统命令行的使用方式。如果本地电脑是Windows环境，需要安装Linux虚拟机。
 
-为了适应学校的高性能计算平台的操作系统环境（CentOS 7），本地安装CentOS 7的虚拟机。
+推荐安装Ubuntu 22.04 LTS发行版（Xfce桌面），请参见[Linux 101-获取Xubuntu虚拟机镜像](https://101.lug.ustc.edu.cn/Ch01/#get-vm-softwares)一节的内容。
 
-- Linux发行版：CentOS 7。安装光盘iso下载链接：[南京大学开源软件镜像站CentOS7安装光盘](https://mirror.nju.edu.cn/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-2207-02.iso)。
-- 虚拟机：使用VMWare或VirtualBox，安装指导视频：[如何使用VMware安装centos7\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Kh4y1m767/)
-
-也可以根据需要安装Ubuntu 22.04。Ubuntu 22.04的镜像也可以在南京大学开源软件镜像站下载到。
+可以根据需要安装其他的Linux发行版。Ubuntu 22.04的镜像也可以在南京大学开源软件镜像站下载到。
 
 ### Linux基础工具使用
 
-下面使用来自MIT的[_The Missing Semester of Your CS Education_](https://missing.csail.mit.edu)（计算机教育中缺失的一课）作为参考资料。该课程提供了详细的技术指导与视频，方便学习。目前国内已经有了对应的中文版网站[“计算机教育中缺失的一课”](https://missing-semester-cn.github.io)。与Linux基础工具使用相关的课程章节包括：
+中科大Linux 101课程提供了关于软件安装、文件操作、网络、文本处理工具与Shell脚本使用的内容。
+
+可以使用来自MIT的[_The Missing Semester of Your CS Education_](https://missing.csail.mit.edu)（计算机教育中缺失的一课）作为参考资料。该课程提供了详细的技术指导与视频，方便学习。目前国内已经有了对应的中文版网站[“计算机教育中缺失的一课”](https://missing-semester-cn.github.io)。与Linux基础工具使用相关的课程章节包括：
 
 - 课程概览与shell。
 - Shell工具和脚本。
@@ -38,13 +39,15 @@ categories: tech
 
 在Linux虚拟机中，安装docker容器环境。部分软件（例如GraphScope）的安装与使用都在Docker环境中完成。
 
-参考教程： [2小时搞定Docker 全程干货 基于CentOS7](https://www.bilibili.com/video/BV1vP4y1m76P/)
+- Linux 101课程的[Docker部分](https://101.lug.ustc.edu.cn/Ch08/)提供了基础教程
+
+- [2小时搞定Docker 全程干货 基于CentOS7](https://www.bilibili.com/video/BV1vP4y1m76P/)
 
 在实际的系统中，因为docker的运行需要root权限，但很多的系统不支持向第三方用户提供root权限（例如学校与商业的高性能计算平台）。因此，实际工作中更多的会用docker的无root权限版平替品podman。可以通过这个视频了解两者的区别[Docker vs Podman 两者的区别是什么？](https://www.bilibili.com/video/BV1YU4y1p7jG)。因为docker和podman的命令行是完全兼容的，因此可以先用docker学习，后期再用podman实际运行与实验。
 
 ### Anaconda安装
 
-对于需要在CentOS 7中使用新版Python环境的同学，可以借助anaconda安装新Python环境。
+可以借助anaconda安装新Python环境。
 
 - Anaconda可以使用国内镜像源（使用说明）：[Anaconda 软件仓库镜像使用帮助 - MirrorZ Help](https://mirror.nju.edu.cn/mirrorz-help/anaconda/?mirror=NJU)
 - Anaconda的安装包（国内镜像）：[南京大学开源镜像站Anaconda3-2023.09-0-Linux-x86_64.sh](https://mirror.nju.edu.cn/anaconda/archive/Anaconda3-2023.09-0-Linux-x86_64.sh)
