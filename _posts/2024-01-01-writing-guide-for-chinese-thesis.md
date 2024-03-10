@@ -90,7 +90,7 @@ show_tags: true
 
 ![](/img/2024-01-01-writing-guide-for-chinese-thesis/fig_example4.png)
 
-![图片来源(《Secure and Efficient k-Nearest Neighbor Query with Privacy-Preserving Authentication》)[https://link.springer.com/chapter/10.1007/978-981-19-7242-3_12]](/img/2024-01-01-writing-guide-for-chinese-thesis/fig_example5.png)
+![图片来源("Secure and Efficient k-Nearest Neighbor Query with Privacy-Preserving Authentication")[https://link.springer.com/chapter/10.1007/978-981-19-7242-3_12]](/img/2024-01-01-writing-guide-for-chinese-thesis/fig_example5.png)
 
 #### 实验结果图
 
