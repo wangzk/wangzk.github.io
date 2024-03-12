@@ -2,7 +2,7 @@
 layout: article
 title: "本科毕业设计/大学生创新训练计划技术指导"
 date: 2024-01-01 16:00:00 +08:00
-last_modified_at: 2024-3-5 19:45:00 +08:00
+last_modified_at: 2024-3-12 18:17:00 +08:00
 categories: tech
 ---
 
@@ -16,11 +16,12 @@ categories: tech
 
 ### Linux虚拟机安装
 
-部分项目的后续实验需要在Linux开发服务器或学校的高性能计算平台上完成，目标操作系统均为Linux系统，因此需要熟悉Linux系统命令行的使用方式。如果本地电脑是Windows环境，需要安装Linux虚拟机。
+部分项目的后续实验需要在 Linux 开发服务器或学校的高性能计算平台上完成，目标操作系统均为 Linux 系统，因此需要熟悉 Linux 系统命令行的使用方式。如果本地电脑是 Windows 环境，需要安装 Linux 虚拟机。
 
-推荐安装Ubuntu 22.04 LTS发行版（Xfce桌面），请参见[Linux 101-获取Xubuntu虚拟机镜像](https://101.lug.ustc.edu.cn/Ch01/#get-vm-softwares)一节的内容。
+推荐安装 Xubuntu 22.04 LTS 发行版（Ubuntu 22.04配合Xfce 桌面），请参见 [Linux 101-获取 Xubuntu 虚拟机镜像](https://101.lug.ustc.edu.cn/Ch01/#get-vm-softwares)一节的内容。
 
-可以根据需要安装其他的Linux发行版。Ubuntu 22.04的镜像也可以在南京大学开源软件镜像站下载到。
+- **建议：自己从头安装Xubuntu系统**，不要使用Linux 101课程预先提供的虚拟机磁盘镜像（因为预先提供的镜像磁盘容量只有16GB, 后续程序开发所需要的硬盘存储空间需保留50GB及以上）。
+- Xubuntu 22.04 的安装光盘镜像xubuntu-22.04.4-desktop-amd64.iso可以从[南京大学开源软件镜像站](http://mirror.nju.edu.cn/ubuntu-cdimage/xubuntu/releases/22.04/release/)或[清华大学开源镜像站](https://mirrors.tuna.tsinghua.edu.cn/ubuntu-cdimage/xubuntu/releases/22.04/release/)下载到。小贴士：与Linux相关的开源软件一般都可以从镜像站下载，速度比从官网下载要快很多。
 
 ### Linux基础工具使用
 
