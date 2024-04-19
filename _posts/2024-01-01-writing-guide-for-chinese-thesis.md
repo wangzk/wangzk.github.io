@@ -1,7 +1,7 @@
 ---
 title: "毕业论文中文写作指导"
 date: 2024-01-01 15:35:00 +08:00
-last_modified_at: 2024-03-10 21:57:00 +08:00
+last_modified_at: 2024-04-19 21:31:00 +08:00
 categories: teaching
 show_tags: true
 ---
@@ -123,6 +123,8 @@ show_tags: true
 如无特别说明，在所有材料中各级**标题**的字体采用中文“黑体”字体搭配英文“Arial”字体的组合。注意，需要在Word中打开字体设置的界面，分别设置中文字体和英文字体。不能在主界面上直接统一设置“黑体”，因为这样会导致英文字母与数字也采用黑体中的中文字型显示，使数字和字母的间距过宽。
 
 默认**正文**字体采用中文“宋体”搭配英文“Times New Roman”。
+
+Word和WPS都支持自动实现全文中英文采用不同的字体组合的设置方式，不需要手动将所有英文一一设置为Times New Roman。设置方法请参考[Word设置教程](https://jingyan.baidu.com/article/e75057f2ddef91ebc91a89f4.html)和WPS设置教程(https://www.wps.cn/learning/question/detail/id/1285.html)，请留意“字体”设置对话框中中文字体和西文字体要分别单独设置，不要将西文字体设置为“（使用中文字体）”。
 
 ### 字号
 
