@@ -33,15 +33,15 @@ lang: zh-CN
 
 一般使用伪代码描述算法，伪代码的格式可以参考英文论文中的格式。下面的几张图给出了风格较为良好的算法伪代码示例，可供写作时参考。
 
-> ![算法伪代码示例1](img/2024-01-01-writing-guide-for-chinese-thesis/algorithm-demo-1.png)
+> ![算法伪代码示例1](/img/2024-01-01-writing-guide-for-chinese-thesis/algorithm-demo-1.png)
 >
 > 图片来源：L. Lai et al., “GLogS: Interactive graph pattern matching query at large scale,” in 2023 USENIX annual technical conference (USENIX ATC 23), Boston, MA: USENIX Association, Jul. 2023, pp. 53–69. [Online]. Available: https://www.usenix.org/conference/atc23/presentation/lai
 >
-> ![算法伪代码示例2](img/2024-01-01-writing-guide-for-chinese-thesis/algorithm-demo-2.png)
+> ![算法伪代码示例2](/img/2024-01-01-writing-guide-for-chinese-thesis/algorithm-demo-2.png)
 >
 > 图片来源：D. Mawhirter, S. Reinehr, C. Holmes, T. Liu, and B. Wu, “GraphZero: A High-Performance Subgraph Matching System,” ACM SIGOPS Operating Systems Review, vol. 55, no. 1, pp. 21–37, 2021, doi: 10.1145/3469379.3469383.
 >
-> ![算法伪代码示例3](img/2024-01-01-writing-guide-for-chinese-thesis/algorithm-demo-3.png)
+> ![算法伪代码示例3](/img/2024-01-01-writing-guide-for-chinese-thesis/algorithm-demo-3.png)
 >
 > 图片来源： T. Shi, M. Zhai, Y. Xu, and J. Zhai, “GraphPi: High Performance Graph Pattern Matching through Effective Redundancy Elimination,” in SC20: International Conference for High Performance Computing, Networking, Storage and Analysis, Atlanta, GA, USA: IEEE, 2020, pp. 1–14. doi: 10.1109/SC41405.2020.00104.
 
