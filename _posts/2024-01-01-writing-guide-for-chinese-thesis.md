@@ -125,13 +125,21 @@ lang: zh-CN
 
 柱状图示例
 
-![折线图示例](/img/2024-01-01-writing-guide-for-chinese-thesis/bar_plot_example.png)
+柱状图适用场景：横轴上各个坐标是平等的个体，横轴坐标之间没有逻辑上的发展关系（例如横轴是“男”、“女”，再比如横轴是不同的查询类型）。柱状图可以方便的对比同一对象上，采用不同的方法（对应图中的Label）时纵轴取值的变化情况。柱状图也可以用来对比同一Label下，不同横轴坐标下取值的的变化。
+
+![折线图示例](/img/2024-01-01-writing-guide-for-chinese-thesis/line_plot_example.png)
 
 折线图示例
+
+折线图适用场景：横轴上的坐标在逻辑上有前后发展关系（例如时间的递增，某个参数值的递增等）。折线图可以方便的对比当横轴坐标发生变化时，纵轴的取值是怎样随时变化的**趋势**。折线图重要的是去展示数据变化的**趋势**。折线图中，要把数据点标记在每条线上（如上面示例图所示），这样可以很容易定位到数据点的取值情况。
 
 ![箱线图示例](/img/2024-01-01-writing-guide-for-chinese-thesis/box_plot_example.png)
 
 箱线图示例（常用于展示数据取值的分布情况）
+
+箱线图示例场景：当需要展示一组数据分布的情况时（例如全国人民工资的分布情况、一个数据集中年龄取值的分布情况），可以使用箱线图。
+
+实验结果图的绘图建议使用Python的[matplotlib包(基础绘图包)](https://matplotlib.org/stable/)或[seaborn包(统计图绘图包)](https://seaborn.pydata.org/)，配合[SciencePlots的绘图风格配置](https://github.com/garrettj403/SciencePlots)。
 
 ## 论文格式指导
 
