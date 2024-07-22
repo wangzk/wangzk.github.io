@@ -28,7 +28,7 @@ last_modified_at: 2024-7-2 16:31:00 +08:00
 <div style="flex:70%; padding: 0px; text-align: left;" >
 
 <p>
-<img src="/img/my-chinese-name.svg" style="width:200px;"/> <big>(Zhaokang Wang)</big>
+<img src="/img/my-chinese-name.svg" style="width:200px;"/> <br> <big>(Zhaokang Wang)</big>
 </p>
 
 <p><b>副教授</b></p>
