@@ -31,11 +31,11 @@ last_modified_at: 2024-7-2 16:31:00 +08:00
 <img src="/img/my-chinese-name.svg" style="width:200px;"/> <big>(Zhaokang Wang)</big>
 </p>
 
-<p><b>讲师</b></p>
+<p><b>副教授</b></p>
 
 <p><a href="https://www.nuaa.edu.cn" target="_blank">南京航空航天大学</a></p>
 
-<p><a href="http://cs.nuaa.edu.cn">计算机科学与技术学院/人工智能学院/软件学院</a></p>
+<p><a href="http://cs.nuaa.edu.cn">计算机科学与技术学院/软件学院</a></p>
 
 <p><b>Email</b>: <em>wangzhaokang [AT] nuaa.edu.cn</em></p>
 
@@ -65,9 +65,7 @@ last_modified_at: 2024-7-2 16:31:00 +08:00
 <small>通讯作者以星号标记，[全部论文列表](/about/publicationlist)</small>
 
 - **Zhaokang Wang**, Weiwei Hu, Guowang Chen, Chunfeng Yuan, Rong Gu\*, Yihua Huang\*, "Towards Efficient Distributed Subgraph Enumeration via Backtracking-based Framework," in *IEEE Transactions on Parallel and Distributed Systems (TPDS)*, vol. 32, no. 12, pp. 2953-2969, 2021. DOI:[10.1109/TPDS.2021.3076246](https://doi.org/10.1109/TPDS.2021.3076246). [[source code]](https://github.com/PasaLab/BENU) [[technical report]](https://arxiv.org/abs/2006.12819) (CCF A类国际期刊)
-- **Zhaokang Wang**, Rong Gu, Weiwei Hu, Chunfeng Yuan, and Yihua Huang, "BENU: Distributed subgraph enumeration with backtracking-based framework", in *Proceedings of the 35th IEEE International Conference on Data Engineering (ICDE)*, pp.136-147, IEEE, 2019. DOI:[10.1109/ICDE.2019.00021](https://doi.org/10.1109/ICDE.2019.00021). [[source code]](https://github.com/PasaLab/BENU) (CCF A类国际会议)
-- **Zhaokang Wang**, Shen Wang, Junhong Li, Chunfeng Yuan, Rong Gu\*, Yihua Huang\*, "VSIM: Distributed local structural vertex similarity calculation on big graphs," in *Journal of Parallel and Distributed Computing (JPDC)*, vol. 158, pp. 29-46, 2021. DOI: [10.1016/j.jpdc.2021.07.009](https://doi.org/10.1016/j.jpdc.2021.07.009). [[source code]](https://github.com/PasaLab/VSIM) (CCF B类国际期刊)
-- **Zhaokang Wang**, Yunpan Wang, Chunfeng Yuan, Rong Gu\*, and Yihua Huang\*, "Empirical analysis of performance bottlenecks in graph neural network training and inference with GPUs," in *Neurocomputing*, vol. 446, pp.165-191, 2021. DOI:[10.1016/j.neucom.2021.03.015](https://doi.org/10.1016/j.neucom.2021.03.015). (中科院二区Top)
+- **Zhaokang Wang**, Rong Gu, Weiwei Hu, Chunfeng Yuan, and Yihua Huang, "BENU: Distributed subgraph enumeration with backtracking-based framework", in *Proceedings of the 35th IEEE International Conference on Data Engineering (ICDE)*, pp.136-147, IEEE, 2019. DOI:[10.1109/ICDE.2019.00021](https://doi.org/10.1109/ICDE..gitee.ioation on big graphs," in *Journal of Parallel and Distributed Computing (JPDC)*, vol. 158, pp. 29-46, 2021. DOI: [10.1016/j.jpdc.2021.07.009](https://doi.org/10.1016/j.jpdc.2021.07.00.gitee.iompirical analysis of performance bottlenecks in graph neural network training and inference with GPUs," in *Neuroc.gitee.ioomputing*, vol. 446, pp.165-191, 2021. DOI:[10.1016/j.neucom.2021.03.015](https://doi.org/10.1016/j.neucom.2021.03.015). (中科院二区Top)
 - **Zhaokang Wang**, Jiahui Pan, Lu Zhou, Zhonghui Zhang, Caocong Ji. "Parallel Integrity Authentication Data Structure Construction for Encrypted Range Queries."  2023 IEEE International Conference on Parallel & Distributed Processing with Applications, pp. 319-327, 2023, doi: 10.1109/ISPA-BDCloud-SocialCom-SustainCom59178.2023.00074.
 
 - Rong Gu, Xiaofei Chen, Haipeng Dai, Shulin Wang, **Zhaokang Wang**, Yaofeng Tu, Yihua Huang, Guihai Chen. "Time and Cost-Efficient Cloud Data Transmission based on Serverless Computing Compression." in  *IEEE INFOCOM 2023 - IEEE Conference on Computer Communications*, pp. 1-10, 2023. DOI: [10.1109/INFOCOM53939.2023.10229090](https://doi.org/10.1109/INFOCOM53939.2023.10229090).  (CCF A类会议)
