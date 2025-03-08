@@ -2,7 +2,7 @@
 layout: article
 title: "本科毕业设计/大学生创新训练计划技术指导"
 date: 2024-01-01 16:00:00 +08:00
-last_modified_at: 2024-3-12 18:17:00 +08:00
+last_modified_at: 2025-3-8 18:37:00 +08:00
 categories: tech
 ---
 
@@ -46,19 +46,13 @@ categories: tech
 
 在实际的系统中，因为docker的运行需要root权限，但很多的系统不支持向第三方用户提供root权限（例如学校与商业的高性能计算平台）。因此，实际工作中更多的会用docker的无root权限版平替品podman。可以通过这个视频了解两者的区别[Docker vs Podman 两者的区别是什么？](https://www.bilibili.com/video/BV1YU4y1p7jG)。因为docker和podman的命令行是完全兼容的，因此可以先用docker学习，后期再用podman实际运行与实验。
 
-### Anaconda安装
-
-可以借助anaconda安装新Python环境。
-
-- Anaconda可以使用国内镜像源（使用说明）：[Anaconda 软件仓库镜像使用帮助 - MirrorZ Help](https://mirror.nju.edu.cn/mirrorz-help/anaconda/?mirror=NJU)
-- Anaconda的安装包（国内镜像）：[南京大学开源镜像站Anaconda3-2023.09-0-Linux-x86_64.sh](https://mirror.nju.edu.cn/anaconda/archive/Anaconda3-2023.09-0-Linux-x86_64.sh)
-- Anaconda安装说明（官方文档）：https://docs.anaconda.com/free/anaconda/install/linux/，其中下载Anaconda安装包的步骤可以不从官方网站下载，而是从上面的国内镜像下载速度快。
-
 ### 使用Git进行代码版本管理
 
 Git是目前使用广泛的一种管理大型软件项目代码版本的工具。当一个软件项目是由多人共同开发时，更加需要使用版本管理工具在多人直接协调。关于Git的介绍与基础使用，可以参考[“计算机教育中缺失的一课”](https://missing-semester-cn.github.io)中“版本控制（Git）”一节的内容。
 
 ## C/C++语言系列
+
+大创项目以及毕业设计如果涉及C/C++程序，目标操作系统环境固定为Ubuntu 22.04 LTS，后续在开发机以及学校高性能计算平台运行程序都依托该环境完成。
 
 ### xmake构建系统
 
@@ -82,15 +76,77 @@ xmake具有项目配置简单、依赖管理方便的特点，很容易就可以
 8. 【类】所有基础类型（例如int, double等）的类成员变量，一定要显式给出一个默认值。
 9. 【类】不要包含引用类型成员变量。
 10. 【类】所有需要对一个类重载赋值运算符的场景，都转换成对应类的set成员函数调用；所有需要拷贝构造函数的地方，都转换为先创建一个默认初始化的对象，再调用set成员函数。
-11. 【语言标准】采用C++11标准，可以使用`auto`关键字。
+11. 【语言标准】采用C++17标准，可以使用`auto`关键字以及新的LTS容器（比如unordered_map等）。
 
 经验表明，对于大学生创新项目以及毕业设计，上述规则限制足够用了！
+
+C/C++代码风格可以参考[《Google开源项目风格指南》](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/)中的相关规定。
 
 ### 程序调试与性能分析
 
 对于C/C++程序进行调试时，需要确保C/C++程序采用“调试模式”编译（即启用-g编译选项），以保证程序中的关键符号（例如变量名、函数名等）是被包含在可执行程序里。
 
 关于调试和性能分析相关技术的介绍，可以参考[“计算机教育中缺失的一课”](https://missing-semester-cn.github.io)中“调试及性能分析”一节的内容。
+
+分析程序执行过程中的性能瓶颈的方法可以参考[《在Linux下生成程序性能分析火焰图》](https://wangzk.github.io/linux/2025/02/19/generate-flamegraph-in-linux.html)中的相关介绍。
+
+## Python编程语言
+
+### Anaconda安装
+
+可以借助anaconda安装新Python环境。
+
+- Anaconda可以使用国内镜像源（使用说明）：[Anaconda 软件仓库镜像使用帮助 - MirrorZ Help](https://mirror.nju.edu.cn/mirrorz-help/anaconda/?mirror=NJU)
+- Anaconda的安装包（国内镜像）：[南京大学开源镜像站Anaconda3-2023.09-0-Linux-x86_64.sh](https://mirror.nju.edu.cn/anaconda/archive/Anaconda3-2023.09-0-Linux-x86_64.sh)
+- Anaconda安装说明（官方文档）：https://docs.anaconda.com/free/anaconda/install/linux/，其中下载Anaconda安装包的步骤可以不从官方网站下载，而是从上面的国内镜像下载速度快。
+
+### 创建可移植的Python运行环境
+
+有时希望将本地开发用的Python虚拟环境能够迁移到远程服务器（例如开发机或超算平台）上执行。可以借助Anaconda创建可迁移的Python运行环境。（注：Python自带的venv工具创建的环境无法迁移到另一台机器上运行，因为venv在创建脚本时会将绝对路径写入相关环境配置文件中，在另一外机器上运行时如果无法保证虚拟环境文件夹的绝对路径一致，可能出现无法运行的问题）。
+
+创建可移植的Python运行环境需要借助conda-pack工具，更详细的描述可以参考Anaconda文档[”Moving Conda Environments“](https://www.anaconda.com/blog/moving-conda-environments)。
+
+**Step 1**: 创建anaconda环境并激活。下面以创建`sc-test-env`环境为例，在终端中执行：
+
+```{bash}
+# 创建环境，遵循默认选项
+$ conda create -n sc-test-env
+# 在当前shell中激活环境
+$ conda activate sc-test-env
+```
+
+**Step 2**：在新环境中利用conda install或pip install命令安装并配置好所有的依赖包（优先推荐通过conda install安装）。配置好环境后，测试一下目标程序能否正常运行。
+
+**Step 3**：在新环境中安装conda-pack包，用于打包环境。
+
+```{bash}
+$ conda install conda-pack
+```
+
+**Step 4**：使用conda pack命令打包创建好的虚拟环境（例如`sc-test-env`），生成压缩包。
+
+```{bash}
+$ conda pack -n sc-test-env
+```
+
+该命令会在当前目录下生成一个压缩包sc-test-env.tar.gz（文件名同环境名），该压缩包封装了Python环境所依赖的软件库。
+
+**Step 5**：将环境压缩包传到目标服务器上，并解压缩虚拟环境。假设已经将压缩包上传到另一台服务器上，通过以下命令将虚拟环境解压到一个目标target-env中。
+
+```{bash}
+# 创建目标文件夹target-env
+$ mkdir target-env
+# 进入target-env
+$ cd target-env
+# 将虚拟环境解压缩到当前目录中
+$ tar -xzf 环境压缩包路径.tar.gz
+```
+
+**Step 6**：通过环境文件夹中的python3解释器运行程序。经过上述步骤，在target-env文件夹下就生成了一个本地Python虚拟环境，该环境包含了所有依赖的第三方软件包。通过该目录下的bin/python3启动Python解释器，即可在此虚拟环境中运行Python程序。
+
+```{bash}
+$ target-env/bin/python3
+```
 
 ## Java语言系列
 
@@ -152,6 +208,10 @@ xmake具有项目配置简单、依赖管理方便的特点，很容易就可以
 - [Basics tutorial](https://grpc.io/docs/languages/java/basics/)
 
 在自己的机器上尝试使用gRPC编写一个最简单的ping-pong程序。
+
+### 高性能计算平台（超算平台）
+
+高性能计算平台通常使用Slurm进行作业任务管理，Slurm使用教程可以参考[上海交通大学Slurm使用教程](https://docs.hpc.sjtu.edu.cn/job/slurm.html)。
 
 ## 图计算
 
