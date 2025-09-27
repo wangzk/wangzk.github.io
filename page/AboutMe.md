@@ -81,8 +81,10 @@ last_modified_at: 2024-7-2 16:31:00 +08:00
 
 #### 学生培养
 
+- 2025年9月，硕士生王炜发表CCF-C类会议论文。
+    - Wei Wang（硕士生）, Zhaokang Wang\*, Yanchao Zhao. "HSC: Scalable Task Scheduling in Large-Scale Edge Environments", *The IFIP International Conference on Network and Parallel Computing (NPC) 2025*, 已录用。
 - 2025年9月，指导2023级本科生发表CCF-C类会议论文。
-    - Bingwen Wang（本科生）, Xinyi Fu, Zhaokang Wang\*. "Distributed Graph-Based Approximate Nearest Neighbor Search Index Construction via Task Parallelism", *IEEE ISPA 2025*，已录用。
+    - Bingwen Wang（本科生）, Xinyi Fu, Zhaokang Wang\*. "Distributed Graph-Based Approximate Nearest Neighbor Search Index Construction via Task Parallelism", *The 23rd IEEE International Symposium on Parallel and Distributed Processing with Applications (IEEE ISPA 2025)*，已录用。
 - 2025年8月，指导2023级本科生发表CCF-C类会议论文，资助本科生参会并做会议报告。
     - Maoyin Ran（本科生）, Xinyi Fu, Zhaokang Wang\*. "Speeding up FaSTest: Parallel Cardinality Estimation of Subgraph Matching", *APWeb-WAIM 2025*，已录用。
 - 2025年6月，**国家级**大学生创新创业训练计划项目“面向子图匹配的并行聚合计算框架设计与实现”以**优秀等级**结题。
@@ -111,7 +113,7 @@ last_modified_at: 2024-7-2 16:31:00 +08:00
 #### 研究生招生
 
 - 招生专业：计算机科学与技术/电子信息
-- 同时招收学硕和专硕（名额：3人）
+- 同时招收学硕和专硕（名额：3人，剩余2人）
 
 欢迎有意报考的同学与我联系！如果你想从事并行计算与分布式计算方向的相关研究工作，如果你对利用多线程并行/分布式计算技术，提升关键算法和核心程序的计算性能有兴趣，欢迎将简历发送至我的电子邮箱。
 
@@ -121,7 +123,7 @@ last_modified_at: 2024-7-2 16:31:00 +08:00
 
 2025-2026年下列方向正在招募本科生参与：
 
-1. 程序设计个性化教学平台的数据驱动的画像与习题推荐功能开发，目标：2026年度计算机设计大赛。
+1. ~~程序设计个性化教学平台的数据驱动的画像与习题推荐功能开发，目标：2026年度计算机设计大赛~~（已招满）。
 2. 基于分布式计算的亿级规模密文关键词检索完备性验证平台，目标：2026年信息安全竞赛-作品赛。
 
-*更新时间：2025年9月5日*
+*更新时间：2025年9月27日*
