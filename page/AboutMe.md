@@ -45,12 +45,15 @@ last_modified_at: 2024-7-2 16:31:00 +08:00
 
 <br>
 
-博士，现任南京航空航天大学计算机科学与技术学院副教授。2021年毕业于[南京大学计算机科学与技术系](https://cs.nju.edu.cn)的[PASA大数据实验室](http://pasa-bigdata.nju.edu.cn/)，研究方向为大数据并行处理、图计算，已在TPDS、ICDE、JPDC等国际著名期刊/会议发表论文多篇。现正主持国家自然科学基金青年基金项目、软件新技术国家重点实验室开放课题项目，正参与国家重点研发计划项目（课题子任务负责人），曾先后参与国家自然科学基金重点项目、国家自然科学基金面上项目等。作为子项目负责人，参与过华为、中国石化等企业创新研究基金项目的研究工作，相关研究成果已落地应用于企业的生产环境。
+博士，现任南京航空航天大学计算机科学与技术学院副教授。2021年毕业于[南京大学计算机科学与技术系](https://cs.nju.edu.cn)的[PASA大数据实验室](http://pasa-bigdata.nju.edu.cn/)，研究方向为分布式智能计算系统、并行计算与图计算，已在TPDS、ICDE、JPDC等国际著名期刊/会议发表论文多篇。
+主持国家自然科学基金青年基金项目、软件新技术国家重点实验室开放课题项目，曾先后参与国家重点研发计划项目（课题子任务负责人）、国家自然科学基金面上项目等。
+作为子项目负责人，参与过华为、中国石化等企业创新研究基金项目的研究工作，相关研究成果已落地应用于企业的生产环境。
 
 #### 研究方向
 
-- **大数据并行处理**：利用分布式并行计算的技术方法，加速大数据处理算法的计算速度。
-- **分布式图计算**: 利用分布式并行计算的技术方法，加速图数据处理中的复杂查询与计算问题。
+- **分布式智能计算系统**：在分布式环境下对智能计算系统（例如大语言模型推理服务）进行并行化加速。
+- **并行处理**：利用多机并行的方法加速复杂模型仿真、大数据分析等高计算量应用。
+- **图计算**: 对大规模图结构数据进行并行查询与处理。
 
 #### 个人经历
 
@@ -75,20 +78,25 @@ last_modified_at: 2024-7-2 16:31:00 +08:00
 
 #### 已授权发明专利
 
+* 南京航空航天大学，"一种跨数据库系统的高效子图匹配查询方法, " 中国[ZL.202411786151.4](https://kns.cnki.net/kcms2/article/abstract?v=D7za5G2w26xlhQ8yQGiOdr-qoQ7Lp1e_KQ76L0OmdOU4tdt4wCOd0qLZzIb8G4t-HhU1dK0HdjSccG4pUkJH4p8Dy0rfgsZsl-mtLMSQvY6HxeI54mkHv9fpTf_05mB6SM7-STT8TvuTzhjt_UWsuwego7b60i21grCrTuBSH5fKx9XvWYRCJg==&uniplatform=NZKPT&language=CHS), 2025.
 * 南京大学, "一种阈值自适应的集合相似连接方法," 中国[ZL. 201810368421.8](https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SCPD&dbname=SCPD2019&filename=CN108573052B&v=FtLPguNHabbvr7j6c5ZkD8ngXn9vPBAv9yBwqR85tHgTniY9AR30mU4IdVgtmVpJ), 2018.
 * 南京大学, "一种分布式的子图枚举方法," 中国[ZL.201710295982.5](https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SCPD&dbname=SCPD2020&filename=CN106991195B&v=OkzOw%25mmd2Bz1HwopuYpApvirwT94vuoB65OJ1voDesM63tlR3YQTtBKzC7UXSRG6nycU), 2017.
 * 南京大学，"在交互式R语言平台中进行并行线性代数计算的方法," 中国[ZL.201510755923.2](https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SCPD&dbname=SCPD2019&filename=CN105389220B&v=%25mmd2Bue%25mmd2BPsOHDD3bf%25mmd2FOc63MBU7SYEXjYXEMrFzv3rXpw5xw8rMCl2seee%25mmd2F%25mmd2Fxp5JU80zj), 2015. 
 
 #### 学生培养
 
+- 2026年3月，硕士生潘佳辉、王炜毕业！潘佳辉获得Tiktok新加坡分部offer~
+- 2026年3月，担任**程序设计（一）课程组**组长
+- 2026年1月，担任计算机学院**程序设计**教学团队共同负责人
+- 2025年12月，程序设计（一）课程开启智慧课程建设，负责[南京航空航天大学程序设计个性化教学平台 (NUAA OJ平台)](https://oj.nuaa.edu.cn)建设工作
 - 2025年9月，硕士生王炜发表CCF-C类会议论文。
-    - Wei Wang（硕士生）, Zhaokang Wang\*, Yanchao Zhao. "HSC: Scalable Task Scheduling in Large-Scale Edge Environments", *The IFIP International Conference on Network and Parallel Computing (NPC) 2025*, 已录用。
+    - Wei Wang（硕士生）, Zhaokang Wang\*, Yanchao Zhao. "HSC: Scalable Task Scheduling in Large-Scale Edge Environments", *The IFIP International Conference on Network and Parallel Computing (NPC) 2025*.
 - 2025年9月，指导2023级本科生发表CCF-C类会议论文。
-    - Bingwen Wang（本科生）, Xinyi Fu, Zhaokang Wang\*. "Distributed Graph-Based Approximate Nearest Neighbor Search Index Construction via Task Parallelism", *The 23rd IEEE International Symposium on Parallel and Distributed Processing with Applications (IEEE ISPA 2025)*，已录用。
+    - Bingwen Wang（本科生）, Xinyi Fu, Zhaokang Wang\*. "Distributed Graph-Based Approximate Nearest Neighbor Search Index Construction via Task Parallelism", *The 23rd IEEE International Symposium on Parallel and Distributed Processing with Applications (IEEE ISPA 2025)*.
 - 2025年8月，指导2023级本科生发表CCF-C类会议论文，资助本科生参会并做会议报告。
-    - Maoyin Ran（本科生）, Xinyi Fu, Zhaokang Wang\*. "Speeding up FaSTest: Parallel Cardinality Estimation of Subgraph Matching", *APWeb-WAIM 2025*，已录用。
+    - Maoyin Ran（本科生）, Xinyi Fu, Zhaokang Wang\*. "Speeding up FaSTest: Parallel Cardinality Estimation of Subgraph Matching", *APWeb-WAIM 2025*.
 - 2025年6月，**国家级**大学生创新创业训练计划项目“面向子图匹配的并行聚合计算框架设计与实现”以**优秀等级**结题。
-- 2025年3月，本人指导的第一位硕士生赵同学毕业，获得华为offer！
+- 2025年3月，本人指导的第一位硕士生赵雅婷毕业，获得华为上海offer~
 - 2023年8月，本科生学生获得第十六届全国大学生信息安全竞赛-作品赛（I级-乙等）获得全国优胜奖（项目：等值连接检索结果完整性验证的并行化算法研究）。
 - 2023年6月，**国家级**大学生创新创业训练计划项目“高可扩展的多维范围检索结果完整性验证方法研究”顺利结题。
 
@@ -113,17 +121,17 @@ last_modified_at: 2024-7-2 16:31:00 +08:00
 #### 研究生招生
 
 - 招生专业：计算机科学与技术/电子信息
-- 同时招收学硕和专硕（名额：3人，剩余1人）
+- 同时招收学硕和专硕（名额：3人，目前剩余1人）
 
 欢迎有意报考的同学与我联系！如果你想从事并行计算与分布式计算方向的相关研究工作，如果你对利用多线程并行/分布式计算技术，提升关键算法和核心程序的计算性能有兴趣，欢迎将简历发送至我的电子邮箱。
 
 研究生阶段会学习和使用并行计算技术与高性能计算平台、图数据库系统（Neo4j等），期望培养研究生较好的编程能力。
 
-#### 本科生科招募
+#### 本科生大创项目招募
 
 2025-2026年下列方向正在招募本科生参与：
 
 1. ~~程序设计个性化教学平台的数据驱动的画像与习题推荐功能开发，目标：2026年度计算机设计大赛~~（已招满）。
-2. 基于分布式计算的亿级规模密文关键词检索完备性验证平台，目标：2026年信息安全竞赛-作品赛。
+2. ~~基于分布式计算的亿级规模密文关键词检索完备性验证平台，目标：2026年信息安全竞赛-作品赛。~~
 
-*更新时间：2025年9月27日*
+*更新时间：2026年3月29日*
